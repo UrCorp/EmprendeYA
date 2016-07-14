@@ -9,12 +9,16 @@ jQuery.fn.anchorAnimate = function(settings) {
       event.preventDefault()
       var locationHref = window.location.href
       var elementClick = $(caller).attr("href")
-      
       var destination = $(elementClick).offset().top;
+      var $header = $('#header');
+
+      if ($header.length == 1) {
+        destination -= $header.height();
+      }
       $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination}, settings.speed, function() {
         window.location.hash = elementClick
       });
-        return false;
+      return false;
     })
   })
 }

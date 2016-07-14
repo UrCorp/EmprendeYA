@@ -13,7 +13,7 @@
 <div class="container-fluid">
   <div class="row">
     <header>
-      <div class="col-md-12 app-header no-side-padding">
+      <div id="header" class="col-md-12 app-header no-side-padding">
         <div class="col-md-5 logo-container">
           <img src="{!! asset('public/assets/img/logo.svg') !!}" alt="EmprendeYA Logotipo" title="Logotipo de EmprendeYA" class="app-logo">
         </div>

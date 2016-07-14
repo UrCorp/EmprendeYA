@@ -247,13 +247,69 @@
       <div class="col-md-5 no-side-padding text-center">
         <img src="{!! asset('public/assets/img/img-steve-jobs.svg') !!}" alt="Steve Jobs" title="Steve Jobs" class="img-steve-jobs" />
       </div>
-      <div class="col-md-7 no-side-padding">
+      <div class="col-md-6 no-side-padding">
         <div class="content col-md-12 no-side-padding">
           <article>
             <p class="phrase">"La única manera de triunfar es amar lo que haces. Como con todo lo que tiene que ver con el corazón, sabrás cuando lo hayas encontrado"</p>
             <p class="author">STEVE JOBS</p>
           </article>
         </div>
+        <div class="col-md-12 no-side-padding">
+          <div class="references">
+            <h2 class="title">Preguntas Frecuentes</h2>
+            <a href="#" class="btn-faqs">FAQ'S</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="app-start-now col-md-12 no-side-padding">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="header">
+        <header>
+          <h2 class="title">COMIENZA YA</h2>
+        </header>
+      </div>
+      <div class="content">
+        <p>¡Queremos saber más de tu proyecto!</p>
+        <p>Escríbenos y nos pondremos en contacto lo más pronto posible para comenzar a apoyarte.</p>
+      </div>
+      <div class="start-form-container col-md-12 no-side-padding">
+        {!! Form::open(['url' => '/', 'method' => 'POST']) !!}
+          <div class="form-group">
+            {!! Form::label('name', 'NOMBRE*') !!}
+            {!! Form::text('name', null, ['class' => 'form-control']) !!}
+          </div>
+          <div class="form-group">
+            {!! Form::label('phone', 'TELEFONO*') !!}
+            {!! Form::text('phone', null, ['class' => 'form-control']) !!}
+          </div>
+          <div class="form-group">
+            {!! Form::label('email', 'EMAIL*') !!}
+            {!! Form::email('email', null, ['class' => 'form-control']) !!}
+          </div>
+          <div class="form-group">
+            {!! Form::label('company', 'NOMBRE DE LA EMPRESA') !!}
+            {!! Form::text('company', null, ['class' => 'form-control']) !!}
+          </div>
+          <div class="form-group">
+            {!! Form::label('city', 'CIUDAD') !!}
+            {!! Form::text('city', null, ['class' => 'form-control']) !!}
+          </div>
+          <div class="form-group">
+            {!! Form::label('turn', 'GIRO DE LA EMPRESA*') !!}
+            {!! Form::text('turn', null, ['class' => 'form-control']) !!}
+          </div>
+          <div class="form-group">
+            {!! Form::label('subject', 'CUENTANOS MAS DE TU PROYECTO') !!}
+            {!! Form::textarea('subject', null, ['class' => 'form-control']) !!}
+          </div>
+          <div class="form-group">
+            <button class="btn-send">ENVIAR</button>
+          </div>
+        {!! Form::close() !!}
       </div>
     </div>
   </div>

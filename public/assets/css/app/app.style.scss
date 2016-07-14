@@ -327,6 +327,7 @@ body {
 
 .app-faqs {
   background-color: #FF004F;
+  color: #FFFFFF;
   padding: 60px 0 0 0;
 }
 
@@ -335,21 +336,69 @@ body {
   height: 285px;
 }
 
-.app-faqs .content {
-  color: #FFFFFF;
-}
-
 .app-faqs .content .phrase {
   margin-top: 30px;
   font-size: 27px;
   line-height: 32px;
   font-weight: 400;
+  text-align: justify;
 }
 
 .app-faqs .content .author {
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
+}
+
+.app-faqs .references {
+  float: right;
+  margin-top: 10px;
+}
+
+.app-faqs .references .title,
+.app-faqs .references .btn-faqs {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.app-faqs .references .btn-faqs {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  border: 3px solid #FF00FF;
+  padding: 12px 54px;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-left: 24px;
+}
+
+.app-faqs .references .btn-faqs:hover {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  background-color: #FF2468;
+}
+
+.app-start-now {
+  padding: 60px 0;
+}
+
+.app-start-now .header .title {
+  font-size: 62px;
+  line-height: 70px;
+  font-weight: 700;
+  color: #5E5E5E;
+  margin-bottom: 25px;
+}
+
+.app-start-now .content p {
+  font-size: 18px;
+  line-height: 22px;
 }
 
 /* RESPONSIVE

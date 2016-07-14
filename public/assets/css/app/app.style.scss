@@ -401,6 +401,42 @@ body {
   line-height: 22px;
 }
 
+.app-start-now .start-form-container .form-group label {
+  background-color: #FFFFFF;
+  color: #8E8E8E;
+  font-size: 18px;
+  font-weight: normal;
+  position: relative;
+  margin-left: 35px;
+  bottom: -15px !important;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.app-start-now .start-form-container .form-group input,
+.app-start-now .start-form-container .form-group textarea {
+  border: 2px solid #8E8E8E;
+  box-shadow: none;
+  font-size: 16px;
+}
+
+.app-start-now .start-form-container .form-group {
+  margin-bottom: 2px;
+}
+
+.app-start-now .start-form-container .form-group .btn-send {
+  background-color: #339900;
+  color: #FFFFFF;
+  border: 0;
+  width: 100%;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  padding: 12px 15px;
+  margin-top: 20px;
+}
+
 /* RESPONSIVE
    ========================================================================= */
 

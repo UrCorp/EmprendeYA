@@ -304,7 +304,7 @@
           </div>
           <div class="form-group">
             {!! Form::label('subject', 'CUENTANOS MAS DE TU PROYECTO') !!}
-            {!! Form::textarea('subject', null, ['class' => 'form-control']) !!}
+            {!! Form::textarea('subject', null, ['class' => 'form-control', 'rows' => '4']) !!}
           </div>
           <div class="form-group">
             <button class="btn-send">ENVIAR</button>

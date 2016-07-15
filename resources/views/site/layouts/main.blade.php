@@ -16,7 +16,9 @@
     <header>
       <div id="header" class="col-md-12 app-header no-side-padding">
         <div class="col-md-5 logo-container">
-          <img src="{!! asset('public/assets/img/logo.svg') !!}" alt="EmprendeYA Logotipo" title="Logotipo de EmprendeYA" class="app-logo">
+          <a href="{!! URL::to('/') !!}">
+            <img src="{!! asset('public/assets/img/logo.svg') !!}" alt="EmprendeYA Logotipo" title="Logotipo de EmprendeYA" class="app-logo">
+          </a>
         </div>
         <div class="col-md-7">
           <nav>
@@ -33,6 +35,24 @@
       </div>
     </header>
     @yield('content')
+    <footer>
+      <div class="app-footer col-md-12">
+        <div class="main-links col-md-6">
+          <div class="col-md-4 no-side-padding text-center">
+            <a href="#">ACERCA DE</a>
+          </div>
+          <div class="col-md-4 no-side-padding text-center">
+            <a href="#">AVISO DE PRIVACIDAD</a>
+          </div>
+          <div class="col-md-4 no-side-padding text-center">
+            <a href="#">POLITICA DE COOKIES</a>
+          </div>
+        </div>
+        <div class="col-md-2 col-md-offset-4 text-center">
+          <img src="{!! asset('public/assets/img/logo-3.svg') !!}" alt="Globo de EmprendeYA" title="EmprendeYA" class="logo-globe">
+        </div>
+      </div>
+    </footer>
   </div>
 </div>
 <!-- [START JavaScript Files] -->

@@ -107,7 +107,7 @@
             </header>
           </div>
           <div class="content">
-            <p><img src="{!! asset('public/assets/img/icon-quotation-marks-1.png') !!}" alt="Comillas 2" class="icon">Saber a quién pedir consejos<br/> es la decisión más importante<br/> que un emprendedor tiene que<br/> tomar.</p>
+            <p><img src="{!! asset('public/assets/img/icon-quotation-marks-1.svg') !!}" alt="Comillas 2" class="icon">Saber a quién pedir consejos<br/> es la decisión más importante<br/> que un emprendedor tiene que<br/> tomar.</p>
           </div>
         </div>
       </div>
@@ -227,18 +227,113 @@
 <section>
   <div class="app-packages col-md-12 no-side-padding">
     <article>
-      <div class="description-container col-md-6 col-md-offset-3 no-side-padding">
-        <div class="header">
-          <header>
-            <h2 class="title">Confiable, fácil y práctico</h2>
-          </header>
-          <div class="content">
-            <div class="icon"></div>
-            <p>Porque tu éxito es nuestro éxito, te ofrecemos tres opciones de KIT que se ajustan a tus necesidades e incluyen todo lo que necesitas para arrancar o hacer crecer tu negocio.</p>
+      <div class="description-container col-md-12 no-side-padding">
+        <div class="col-md-6 col-md-offset-3 no-side-padding">
+          <div class="header">
+            <header>
+              <h2 class="title">Confiable, fácil y práctico</h2>
+            </header>
+            <div class="content">
+              <div class="icon"></div>
+              <p>Porque tu éxito es nuestro éxito, te ofrecemos tres opciones de KIT que se ajustan a tus necesidades e incluyen todo lo que necesitas para arrancar o hacer crecer tu negocio.</p>
+            </div>
           </div>
         </div>
       </div>
     </article>
+    <div class="col-md-12 no-side-padding">
+      <div class="comparative-container col-md-8 col-md-offset-2 no-side-padding">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>
+                <p>Elige los beneficios<br/>de acuerdo a tus<br/>necesidades:</p>
+              </th>
+              <th>
+                <h3>INICIAL</h3>
+                <span>775<sup>00 MXN</sup></span>
+              </th>
+              <th>
+                <h3>DIGITAL</h3>
+                <span>999<sup>00 MXN</sup></span>
+              </th>
+              <th>
+                 <h3>INTEGRAL</h3>
+                 <span>1099<sup>00 MXN</sup></span>
+               </th> 
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Teléfono ilimitado y plan de datos</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Financiamiento oportuno y sin trabas</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Asesoría legal y contratos</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Contratos, asesoría y servicios legales</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Recibe pagos con tarjetas de crédito<br/>o débito</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Plataforma de negocios con empresas<br/>de México y EEUU</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Sistema de administración de tu negocio:<br/>Facturas, inventarios, ventas, etc.</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Dominio, diseño de pagina web y<br/>correos electrónicos</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Diseño de logo e identidad corporativa</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Diseño de tarjetas de presentación, <br/>papelería y hojas membretadas</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Diseño de plantillas PPT y PDF</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
   </div>
 </section>
 <section>
@@ -303,8 +398,28 @@
             {!! Form::text('turn', null, ['class' => 'form-control']) !!}
           </div>
           <div class="form-group">
-            {!! Form::label('subject', 'CUENTANOS MAS DE TU PROYECTO') !!}
+            {!! Form::label('subject', 'CUENTANOS MÁS DE TU PROYECTO') !!}
             {!! Form::textarea('subject', null, ['class' => 'form-control', 'rows' => '4']) !!}
+          </div>
+          <div class="form-group">
+            <div class="col-md-4 no-side-padding">
+              <label>
+                {!! Form::radio('kit', 'KIT INICIAL', false, ['id' => 'kit-initial']) !!}
+                KIT INICIAL
+              </label>
+            </div>
+            <div class="col-md-4 no-side-padding">
+              <label>
+                {!! Form::radio('kit', 'KIT DIGITAL', false, ['id' => 'kit-digital']) !!}
+                KIT DIGITAL
+              </label>
+            </div>
+            <div class="col-md-4 no-side-padding">
+              <label>
+                {!! Form::radio('kit', 'KIT INTEGRAL', false, ['id' => 'kit-integral']) !!}
+                KIT INTEGRAL
+              </label>
+            </div>
           </div>
           <div class="form-group">
             <button class="btn-send">ENVIAR</button>

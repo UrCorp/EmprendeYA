@@ -293,11 +293,12 @@ body {
 }
 
 .app-packages {
-  background-color: #797979;
-  color: #FFFFFF;
+  
 }
 
 .app-packages .description-container {
+  background-color: #797979;
+  color: #FFFFFF;
   padding: 50px 0;
 }
 
@@ -323,6 +324,10 @@ body {
   background-size: contain;
   width: 64px;
   height: 64px;
+}
+
+.app-packages .comparative-container {
+  
 }
 
 .app-faqs {
@@ -402,6 +407,7 @@ body {
 }
 
 .app-start-now .start-form-container .form-group label {
+  cursor: pointer;
   background-color: #FFFFFF;
   color: #8E8E8E;
   font-size: 18px;
@@ -411,6 +417,14 @@ body {
   bottom: -15px !important;
   padding-left: 7px;
   padding-right: 7px;
+}
+
+.app-start-now .start-form-container .form-group label input[type="radio"] {
+  width: 30px;
+  height: 30px;
+  vertical-align: top;
+  margin-top: -4px;
+  margin-right: 10px;
 }
 
 .app-start-now .start-form-container .form-group input,
@@ -425,6 +439,11 @@ body {
 }
 
 .app-start-now .start-form-container .form-group .btn-send {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
   background-color: #339900;
   color: #FFFFFF;
   border: 0;
@@ -434,7 +453,32 @@ body {
   font-weight: 700;
   line-height: 22px;
   padding: 12px 15px;
-  margin-top: 20px;
+  margin-top: 40px;
+}
+
+.app-start-now .start-form-container .form-group .btn-send:hover {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  background-color: #40C100;
+}
+
+.app-footer {
+  background-color: #000000;
+  padding: 30px 45px;
+}
+
+.app-footer .main-links a {
+  margin-top: 5px;
+  display: block;
+  color: #FFFFFF;
+}
+
+.app-footer .logo-globe {
+  width: 32px;
+  height: 32px;
 }
 
 /* RESPONSIVE

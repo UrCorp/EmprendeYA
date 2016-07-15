@@ -7,6 +7,7 @@
   <!-- [START Cascade Style Sheet Files] -->
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,400italic,300italic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="{!! asset('public/assets/css/bootstrap.min.css') !!}">
+  <link rel="stylesheet" type="text/css" href="{!! asset('public/assets/css/font-awesome.min.css') !!}">
   <link rel="stylesheet" type="text/css" href="{!! asset('public/assets/css/style.css') !!}">
   <!-- [END Cascade Style Sheet Files] -->
 </head>

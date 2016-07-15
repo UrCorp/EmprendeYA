@@ -247,88 +247,207 @@
           <thead>
             <tr>
               <th>
-                <p>Elige los beneficios<br/>de acuerdo a tus<br/>necesidades:</p>
+                <p class="explanation">Elige los beneficios<br/>de acuerdo a tus<br/>necesidades:</p>
               </th>
               <th>
-                <h3>INICIAL</h3>
-                <span>775<sup>00 MXN</sup></span>
+                <h3 class="name">INICIAL</h3>
+                <div class="text-center">
+                  <span class="price">775<sup>00 MXN</sup></span>
+                </div>
+                <div class="btn-container">
+                  <a href="#" class="btn-chose initial">ELEGIR</a>
+                </div>
               </th>
               <th>
-                <h3>DIGITAL</h3>
-                <span>999<sup>00 MXN</sup></span>
+                <h3 class="name">DIGITAL</h3>
+                <div class="text-center">
+                  <span class="price">999<sup>00 MXN</sup></span>
+                </div>
+                <div class="btn-container">
+                  <a href="#" class="btn-chose digital">ELEGIR</a>
+                </div>
               </th>
               <th>
-                 <h3>INTEGRAL</h3>
-                 <span>1099<sup>00 MXN</sup></span>
+                <h3 class="name">INTEGRAL</h3>
+                <div class="text-center">
+                  <span class="price">1099<sup>00 MXN</sup></span>
+                </div>
+                <div class="btn-container">
+                  <a href="#" class="btn-chose integral">ELEGIR</a>
+                </div>
                </th> 
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>Teléfono ilimitado y plan de datos</td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td>
+                <div class="check-container">
+                  <span class="fa fa-check"></span>
+                </div>
+              </td>
+              <td>
+                <div class="check-container">
+                  <span class="fa fa-check"></span>
+                </div>
+              </td>
+              <td>
+                <div class="check-container">
+                  <span class="fa fa-check"></span>
+                </div>
+              </td>
             </tr>
             <tr>
               <td>Financiamiento oportuno y sin trabas</td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td>
+                <div class="check-container">
+                  <span class="fa fa-check"></span>
+                </div>
+              </td>
+              <td>
+                <div class="check-container">
+                  <span class="fa fa-check"></span>
+                </div>
+              </td>
+              <td>
+                <div class="check-container">
+                  <span class="fa fa-check"></span>
+                </div>
+              </td>
             </tr>
             <tr>
               <td>Asesoría legal y contratos</td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td>
+                <div class="check-container">
+                  <span class="fa fa-check"></span>
+                </div>
+              </td>
+              <td>
+                <div class="check-container">
+                  <span class="fa fa-check"></span>
+                </div>
+              </td>
+              <td>
+                <div class="check-container">
+                  <span class="fa fa-check"></span>
+                </div>
+              </td>
             </tr>
             <tr>
               <td>Contratos, asesoría y servicios legales</td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td>
+                <div class="check-container">
+                  <span class="fa fa-check"></span>
+                </div>
+              </td>
+              <td>
+                <div class="check-container">
+                  <span class="fa fa-check"></span>
+                </div>
+              </td>
+              <td>
+                <div class="check-container">
+                  <span class="fa fa-check"></span>
+                </div>
+              </td>
             </tr>
             <tr>
               <td>Recibe pagos con tarjetas de crédito<br/>o débito</td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td>
+                <div class="check-container">
+                  <span class="fa fa-check"></span>
+                </div>
+              </td>
+              <td>
+                <div class="check-container">
+                  <span class="fa fa-check"></span>
+                </div>
+              </td>
+              <td>
+                <div class="check-container">
+                  <span class="fa fa-check"></span>
+                </div>
+              </td>
             </tr>
             <tr>
               <td>Plataforma de negocios con empresas<br/>de México y EEUU</td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td>
+                <div class="check-container">
+                  <span class="fa fa-check"></span>
+                </div>
+              </td>
+              <td>
+                <div class="check-container">
+                  <span class="fa fa-check"></span>
+                </div>
+              </td>
+              <td>
+                <div class="check-container">
+                  <span class="fa fa-check"></span>
+                </div>
+              </td>
             </tr>
             <tr>
               <td>Sistema de administración de tu negocio:<br/>Facturas, inventarios, ventas, etc.</td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td>
+                <div class="check-container">
+                  <span class="fa fa-check"></span>
+                </div>
+              </td>
+              <td>
+                <div class="check-container">
+                  <span class="fa fa-check"></span>
+                </div>
+              </td>
+              <td>
+                <div class="check-container">
+                  <span class="fa fa-check"></span>
+                </div>
+              </td>
             </tr>
             <tr>
               <td>Dominio, diseño de pagina web y<br/>correos electrónicos</td>
               <td></td>
-              <td></td>
-              <td></td>
+              <td>
+                <div class="check-container">
+                  <span class="fa fa-check"></span>
+                </div>
+              </td>
+              <td>
+                <div class="check-container">
+                  <span class="fa fa-check"></span>
+                </div>
+              </td>
             </tr>
             <tr>
               <td>Diseño de logo e identidad corporativa</td>
               <td></td>
               <td></td>
-              <td></td>
+              <td>
+                <div class="check-container">
+                  <span class="fa fa-check"></span>
+                </div>
+              </td>
             </tr>
             <tr>
               <td>Diseño de tarjetas de presentación, <br/>papelería y hojas membretadas</td>
               <td></td>
               <td></td>
-              <td></td>
+              <td>
+                <div class="check-container">
+                  <span class="fa fa-check"></span>
+                </div>
+              </td>
             </tr>
             <tr>
               <td>Diseño de plantillas PPT y PDF</td>
               <td></td>
               <td></td>
-              <td></td>
+              <td>
+                <div class="check-container">
+                  <span class="fa fa-check"></span>
+                </div>
+              </td>
             </tr>
           </tbody>
         </table>

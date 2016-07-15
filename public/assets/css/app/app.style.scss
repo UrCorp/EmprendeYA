@@ -292,10 +292,6 @@ body {
   background-size: 78px 58px;
 }
 
-.app-packages {
-  
-}
-
 .app-packages .description-container {
   background-color: #797979;
   color: #FFFFFF;
@@ -327,7 +323,95 @@ body {
 }
 
 .app-packages .comparative-container {
-  
+  color: #000000;
+}
+
+.app-packages .comparative-container .explanation {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.app-packages .comparative-container .name {
+  color: #797979;
+  font-size: 32px;
+  text-align: center;
+}
+
+.app-packages .comparative-container .price {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.app-packages .comparative-container .price sup {
+  font-size: 20px;
+  font-weight: normal;
+  margin-left: 10px;
+  top: -15px;
+}
+
+.app-packages .comparative-container .btn-container {
+  padding: 0 20px;
+}
+
+.app-packages .comparative-container .btn-container .btn-chose {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  display: inline-block;
+  text-align: center;
+  padding: 8px 16px;
+  width: 100%;
+  border: none;
+  background-color: #797979;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: lighter;
+}
+
+.app-packages .comparative-container .btn-container .btn-chose:hover {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+}
+
+.app-packages .comparative-container .btn-container .btn-chose.initial {
+  background-color: #FFCC33;
+}
+
+.app-packages .comparative-container .btn-container .btn-chose.initial:hover {
+  background-color: #FFD751;
+}
+
+.app-packages .comparative-container .btn-container .btn-chose.digital {
+  background-color: #FF3366;
+}
+
+.app-packages .comparative-container .btn-container .btn-chose.digital:hover {
+  background-color: #FF5781;
+}
+
+.app-packages .comparative-container .btn-container .btn-chose.integral {
+  background-color: #140328;
+}
+
+.app-packages .comparative-container .btn-container .btn-chose.integral:hover {
+  background-color: #250d40;
+}
+
+.app-packages .comparative-container table tbody tr td {
+  vertical-align: middle;
+}
+
+.app-packages .comparative-container .check-container {
+  text-align: center;
+  color: #67da67;
+  font-size: 32px;
 }
 
 .app-faqs {

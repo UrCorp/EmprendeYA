@@ -26,7 +26,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 9999999;
+  z-index: 1000;
   background-color: #000000;
   max-height: 80px;
   overflow: hidden;
@@ -228,6 +228,38 @@ body {
   background-color: #D2D2D2;
 }
 
+.app-services .list .item-1:hover {
+  background-color: #72E2FC;
+}
+
+.app-services .list .item-2:hover {
+  background-color: #85FC75;
+}
+
+.app-services .list .item-3:hover {
+  background-color: #8181E2;
+}
+
+.app-services .list .item-4:hover {
+  background-color: #FCCA7A;
+}
+
+.app-services .list .item-5:hover {
+  background-color: #FF5BCD;
+}
+
+.app-services .list .item-6:hover {
+  background-color: #FC817E;
+}
+
+.app-services .list .item-7:hover {
+  background-color: #7FD6A2;
+}
+
+.app-services .list .item-8:hover {
+  background-color: #CD82F4;
+}
+
 .app-services .list .item .title,
 .app-services .list .item .description {
   font-size: 18px;
@@ -324,11 +356,14 @@ body {
 
 .app-packages .comparative-container {
   color: #000000;
+  padding: 60px 0;
 }
 
 .app-packages .comparative-container .explanation {
   font-size: 24px;
   font-weight: 400;
+  vertical-align: top;
+  padding-top: 30px;
 }
 
 .app-packages .comparative-container .name {
@@ -347,6 +382,13 @@ body {
   font-weight: normal;
   margin-left: 10px;
   top: -15px;
+}
+
+.app-packages .comparative-container .price small {
+  font-size: 16px;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: -70px;
 }
 
 .app-packages .comparative-container .btn-container {
@@ -412,6 +454,12 @@ body {
   text-align: center;
   color: #67da67;
   font-size: 32px;
+}
+
+.app-packages .comparative-container .terms-container p {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 0;
 }
 
 .app-faqs {
@@ -549,6 +597,30 @@ body {
   background-color: #40C100;
 }
 
+.app-enterprise-description .logo {
+  display: block;
+  margin: auto;
+  width: 180px;
+  height: 220px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.app-enterprise-description .name {
+  font-size: 32px;
+  line-height: 34px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.app-enterprise-description .description {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  text-align: justify;
+}
+
 .app-footer {
   background-color: #000000;
   padding: 30px 45px;
@@ -569,3 +641,44 @@ body {
    ========================================================================= */
 
 @import "tablets", "desktop", "bigdesktop", "general";
+
+/* PATCHES
+   ========================================================================= */
+
+.btn,
+.modal-content {
+  border-radius: 0;
+}
+
+.model-dialog {
+  width: 50%;
+}
+
+.modal-content,
+.modal-header,
+.modal-footer {
+  border: none;
+}
+
+.modal-header button.close {
+  color: #000000;
+  font-size: 26px;
+  opacity: 1;
+}
+
+.modal-footer .btn-more-info {
+  font-size: 18px;
+  background-color: inherit;
+  color: #337AB7;
+  border: 1px solid #2E6DA4;
+}
+
+.modal-footer .btn-more-info:hover {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  background-color: #337AB7;
+  color: #FFFFFF;
+}

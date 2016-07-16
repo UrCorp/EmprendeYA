@@ -127,7 +127,7 @@
       </header>
       <div class="col-md-12 no-side-padding">
         <div class="col-md-8 col-md-offset-2 list no-side-padding">
-          <div class="item col-md-3">
+          <div class="item item-1 col-md-3" data-name="TELCEL">
             <article>
               <div class="text-center">
                 <div class="icon icon-cellphone"></div>
@@ -138,7 +138,7 @@
               <p class="description">Te damos una lìnea TELCEL totalmente ilimitado y con acceso a internet</p>
             </article>
           </div>
-          <div class="item col-md-3">
+          <div class="item item-2 col-md-3" data-name="PROYECTO PYME">
             <article>
               <div class="text-center">
                 <div class="icon icon-money"></div>
@@ -149,7 +149,7 @@
               <p class="description">Créditos para licitaciones, órdenes de compra, surtir pedidos y compra de equipo</p>
             </article>
           </div>
-          <div class="item col-md-3">
+          <div class="item item-3 col-md-3" data-name="URCORP">
             <article>
               <div class="text-center">
                 <div class="icon icon-web-design"></div>
@@ -160,7 +160,7 @@
               <p class="description">Todas las empresas necesitan tener presencia en la era digital, URCORP te lleva ahí</p>
             </article>
           </div>
-          <div class="item col-md-3">
+          <div class="item item-4 col-md-3" data-name="LEGALARIO">
             <article>
               <div class="text-center">
                 <div class="icon icon-legal"></div>
@@ -175,7 +175,7 @@
       </div>
       <div class="col-md-12 no-side-padding">
         <div class="col-md-8 col-md-offset-2 list no-side-padding">
-          <div class="item col-md-3">
+          <div class="item item-5 col-md-3" data-name="CONTAX">
             <article>
               <div class="text-center">
                 <div class="icon icon-calc"></div>
@@ -186,7 +186,7 @@
               <p class="description">Nos encargamos del área contable, fiscal y financiera</p>
             </article>
           </div>
-          <div class="item col-md-3">
+          <div class="item item-6 col-md-3"  data-name="AEM">
             <article>
               <div class="text-center">
                 <div class="icon icon-business"></div>
@@ -197,7 +197,7 @@
               <p class="description">Para que hagas más negocios con empresas de México y EUA</p>
             </article>
           </div>
-          <div class="item col-md-3">
+          <div class="item item-7 col-md-3" data-name="SEÑOR PAGO">
             <article>
               <div class="text-center">
                 <div class="icon icon-card-terminal"></div>
@@ -208,7 +208,7 @@
               <p class="description">Acepta pagos con tarjeta sin tener que rentar una terminal de banco</p>
             </article>
           </div>
-          <div class="item col-md-3">
+          <div class="item item-8 col-md-3" data-name="ROCKETUM">
             <article>
               <div class="text-center">
                 <div class="icon icon-management-system"></div>
@@ -241,18 +241,18 @@
         </div>
       </div>
     </article>
-    <div class="col-md-12 no-side-padding">
-      <div class="comparative-container col-md-8 col-md-offset-2 no-side-padding">
-        <table class="table">
+    <div class="comparative-container col-md-12 no-side-padding">
+      <div class="col-md-8 col-md-offset-2 no-side-padding">
+        <table class="table table-striped">
           <thead>
             <tr>
-              <th>
-                <p class="explanation">Elige los beneficios<br/>de acuerdo a tus<br/>necesidades:</p>
+              <th class="explanation">
+                <p>Elige los beneficios<br/>de acuerdo a tus<br/>necesidades:</p>
               </th>
               <th>
                 <h3 class="name">INICIAL</h3>
                 <div class="text-center">
-                  <span class="price">775<sup>00 MXN</sup></span>
+                  <span class="price">775<sup>00 MXN</sup><small>/mes</small></span>
                 </div>
                 <div class="btn-container">
                   <a href="#" class="btn-chose initial">ELEGIR</a>
@@ -261,7 +261,7 @@
               <th>
                 <h3 class="name">DIGITAL</h3>
                 <div class="text-center">
-                  <span class="price">999<sup>00 MXN</sup></span>
+                  <span class="price">999<sup>00 MXN</sup><small>/mes</small></span>
                 </div>
                 <div class="btn-container">
                   <a href="#" class="btn-chose digital">ELEGIR</a>
@@ -270,7 +270,7 @@
               <th>
                 <h3 class="name">INTEGRAL</h3>
                 <div class="text-center">
-                  <span class="price">1099<sup>00 MXN</sup></span>
+                  <span class="price">1099<sup>00 MXN</sup><small>/mes</small></span>
                 </div>
                 <div class="btn-container">
                   <a href="#" class="btn-chose integral">ELEGIR</a>
@@ -452,6 +452,10 @@
           </tbody>
         </table>
       </div>
+      <div class="terms-container col-md-8 col-md-offset-2 no-side-padding">
+        <p>* Contrata el KIT DIGITAL por $ 775 pesos mensuales con un pago inicial de $1,500 pesos.</p>
+        <p>** Contrata el KIT INTEGRAL por $ 775 pesos mensuales con un pago inicial de $2,500 pesos.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -548,4 +552,7 @@
     </div>
   </div>
 </section>
+@endsection
+@section('scripts')
+<script type="text/javascript" src="{!! asset('public/assets/js/app/welcome/index.js') !!}"></script>
 @endsection

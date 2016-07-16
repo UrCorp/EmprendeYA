@@ -12,10 +12,15 @@
 */
 
 Route::group(['as' => 'site.'], function() {
-
   Route::get('/', [
     'as'    => 'index',
     'uses'  => 'Welcome@index'
   ]);
 
+  Route::group(['prefix' => 'enterprises', 'as' => 'enterprises.'], function() {
+    Route::get('{enterprise}/description.json', [
+      'as'    =>  'description',
+      'uses'  =>  'Enterprises@description'
+    ]);
+  });
 });

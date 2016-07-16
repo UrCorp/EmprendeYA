@@ -12,6 +12,20 @@
   <!-- [END Cascade Style Sheet Files] -->
 </head>
 <body>
+<div id="generalModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 <div class="container-fluid">
   <div class="row">
     <header>
@@ -61,6 +75,7 @@
 <script type="text/javascript" src="{!! asset('public/assets/js/jquery.anchor.js') !!}"></script>
 <script type="text/javascript" src="{!! asset('public/assets/js/bootstrap.min.js') !!}"></script>
 <script type="text/javascript" src="{!! asset('public/assets/js/app.js') !!}"></script>
+@yield('scripts')
 <!-- [END JavaScript Files] -->
 </body>
 </html>

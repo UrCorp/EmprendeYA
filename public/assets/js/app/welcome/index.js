@@ -3,8 +3,7 @@ $(function() {
   var $generalModal = $('#generalModal');
 
   $generalModal.on('hidden.bs.modal', function (e) {
-    $('.modal-body', $generalModal).empty();
-    $('.modal-footer', $generalModal).empty();
+    $('.modal-body, .modal-footer', $generalModal).empty();
   });
 
   $items.each(function() {
@@ -17,7 +16,6 @@ $(function() {
       $generalModal.modal('show');
 
       $.getJSON("enterprises/"+enteprise_name+"/description.json", function(data) {
-        console.log(data);
         $('.modal-body', $generalModal).html(
           '<div class="row">'+
           '\t<div class="app-enterprise-description col-md-12">'+

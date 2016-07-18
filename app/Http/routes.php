@@ -12,15 +12,23 @@
 */
 
 Route::group(['as' => 'site.'], function() {
+
   Route::get('/', [
     'as'    => 'index',
-    'uses'  => 'Welcome@index'
+    'uses'  => 'WelcomeController@index'
   ]);
 
+  Route::group(['prefix' => 'startnow', 'as' => 'startnow.'], function() {
+    Route::post('/send', [
+      'as'    => 'send',
+      'uses'  => 'StartNowController@send'
+    ]);
+  });
+
   Route::group(['prefix' => 'enterprises', 'as' => 'enterprises.'], function() {
-    Route::get('{enterprise}/description.json', [
+    Route::get('/{enterprise}/description.json', [
       'as'    =>  'description',
-      'uses'  =>  'Enterprises@description'
+      'uses'  =>  'EnterprisesController@description'
     ]);
   });
 });

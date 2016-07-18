@@ -160,6 +160,7 @@ return [
          * External Service Providers...
          */
         Collective\Html\HtmlServiceProvider::class,
+        Cviebrock\EloquentSluggable\SluggableServiceProvider::class,
 
     ],
 

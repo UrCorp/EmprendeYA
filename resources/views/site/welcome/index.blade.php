@@ -127,7 +127,7 @@
       </header>
       <div class="col-md-12 no-side-padding">
         <div class="col-md-8 col-md-offset-2 list no-side-padding">
-          <div class="item item-1 col-md-3" data-name="TELCEL">
+          <div class="item item-1 col-md-3" data-name="telcel">
             <article>
               <div class="text-center">
                 <div class="icon icon-cellphone"></div>
@@ -138,7 +138,7 @@
               <p class="description">Te damos una lìnea TELCEL totalmente ilimitado y con acceso a internet</p>
             </article>
           </div>
-          <div class="item item-2 col-md-3" data-name="PROYECTO PYME">
+          <div class="item item-2 col-md-3" data-name="proyecto-pyme">
             <article>
               <div class="text-center">
                 <div class="icon icon-money"></div>
@@ -149,7 +149,7 @@
               <p class="description">Créditos para licitaciones, órdenes de compra, surtir pedidos y compra de equipo</p>
             </article>
           </div>
-          <div class="item item-3 col-md-3" data-name="URCORP">
+          <div class="item item-3 col-md-3" data-name="urcorp">
             <article>
               <div class="text-center">
                 <div class="icon icon-web-design"></div>
@@ -160,7 +160,7 @@
               <p class="description">Todas las empresas necesitan tener presencia en la era digital, URCORP te lleva ahí</p>
             </article>
           </div>
-          <div class="item item-4 col-md-3" data-name="LEGALARIO">
+          <div class="item item-4 col-md-3" data-name="legalario">
             <article>
               <div class="text-center">
                 <div class="icon icon-legal"></div>
@@ -175,7 +175,7 @@
       </div>
       <div class="col-md-12 no-side-padding">
         <div class="col-md-8 col-md-offset-2 list no-side-padding">
-          <div class="item item-5 col-md-3" data-name="CONTAX">
+          <div class="item item-5 col-md-3" data-name="contax">
             <article>
               <div class="text-center">
                 <div class="icon icon-calc"></div>
@@ -186,7 +186,7 @@
               <p class="description">Nos encargamos del área contable, fiscal y financiera</p>
             </article>
           </div>
-          <div class="item item-6 col-md-3"  data-name="AEM">
+          <div class="item item-6 col-md-3"  data-name="aem">
             <article>
               <div class="text-center">
                 <div class="icon icon-business"></div>
@@ -197,7 +197,7 @@
               <p class="description">Para que hagas más negocios con empresas de México y EUA</p>
             </article>
           </div>
-          <div class="item item-7 col-md-3" data-name="SEÑOR PAGO">
+          <div class="item item-7 col-md-3" data-name="senor-pago">
             <article>
               <div class="text-center">
                 <div class="icon icon-card-terminal"></div>
@@ -208,7 +208,7 @@
               <p class="description">Acepta pagos con tarjeta sin tener que rentar una terminal de banco</p>
             </article>
           </div>
-          <div class="item item-8 col-md-3" data-name="ROCKETUM">
+          <div class="item item-8 col-md-3" data-name="rocketum">
             <article>
               <div class="text-center">
                 <div class="icon icon-management-system"></div>
@@ -495,54 +495,44 @@
         <p>Escríbenos y nos pondremos en contacto lo más pronto posible para comenzar a apoyarte.</p>
       </div>
       <div class="start-form-container col-md-12 no-side-padding">
-        {!! Form::open(['url' => '/', 'method' => 'POST']) !!}
+        {!! Form::open(['route' => 'site.startnow.send', 'method' => 'POST']) !!}
           <div class="form-group">
-            {!! Form::label('name', 'NOMBRE*') !!}
-            {!! Form::text('name', null, ['class' => 'form-control']) !!}
+            {!! Form::label('startnow[name]', 'NOMBRE*') !!}
+            {!! Form::text('startnow[name]', null, ['class' => 'form-control']) !!}
           </div>
           <div class="form-group">
-            {!! Form::label('phone', 'TELEFONO*') !!}
-            {!! Form::text('phone', null, ['class' => 'form-control']) !!}
+            {!! Form::label('startnow[phone]', 'TELEFONO*') !!}
+            {!! Form::text('startnow[phone]', null, ['class' => 'form-control']) !!}
           </div>
           <div class="form-group">
-            {!! Form::label('email', 'EMAIL*') !!}
-            {!! Form::email('email', null, ['class' => 'form-control']) !!}
+            {!! Form::label('startnow[email]', 'EMAIL*') !!}
+            {!! Form::email('startnow[email]', null, ['class' => 'form-control']) !!}
           </div>
           <div class="form-group">
-            {!! Form::label('company', 'NOMBRE DE LA EMPRESA') !!}
-            {!! Form::text('company', null, ['class' => 'form-control']) !!}
+            {!! Form::label('startnow[company]', 'NOMBRE DE LA EMPRESA') !!}
+            {!! Form::text('startnow[company]', null, ['class' => 'form-control']) !!}
           </div>
           <div class="form-group">
-            {!! Form::label('city', 'CIUDAD') !!}
-            {!! Form::text('city', null, ['class' => 'form-control']) !!}
+            {!! Form::label('startnow[city]', 'CIUDAD') !!}
+            {!! Form::text('startnow[city]', null, ['class' => 'form-control']) !!}
           </div>
           <div class="form-group">
-            {!! Form::label('turn', 'GIRO DE LA EMPRESA*') !!}
-            {!! Form::text('turn', null, ['class' => 'form-control']) !!}
+            {!! Form::label('startnow[turn]', 'GIRO DE LA EMPRESA*') !!}
+            {!! Form::text('startnow[turn]', null, ['class' => 'form-control']) !!}
           </div>
           <div class="form-group">
-            {!! Form::label('subject', 'CUENTANOS MÁS DE TU PROYECTO') !!}
-            {!! Form::textarea('subject', null, ['class' => 'form-control', 'rows' => '4']) !!}
+            {!! Form::label('startnow[subject]', 'CUENTANOS MÁS DE TU PROYECTO') !!}
+            {!! Form::textarea('startnow[subject]', null, ['class' => 'form-control', 'rows' => '4']) !!}
           </div>
           <div class="form-group">
-            <div class="col-md-4 no-side-padding">
-              <label>
-                {!! Form::radio('kit', 'KIT INICIAL', false, ['id' => 'kit-initial']) !!}
-                KIT INICIAL
-              </label>
-            </div>
-            <div class="col-md-4 no-side-padding">
-              <label>
-                {!! Form::radio('kit', 'KIT DIGITAL', false, ['id' => 'kit-digital']) !!}
-                KIT DIGITAL
-              </label>
-            </div>
-            <div class="col-md-4 no-side-padding">
-              <label>
-                {!! Form::radio('kit', 'KIT INTEGRAL', false, ['id' => 'kit-integral']) !!}
-                KIT INTEGRAL
-              </label>
-            </div>
+            @foreach ($kits as $kit)
+              <div class="col-md-4 no-side-padding">
+                <label>
+                  {!! Form::radio('startnow[kit]', $kit->slug, false, ['id' => 'kit-'.$kit->slug]) !!}
+                  KIT {{ cstrtoupper($kit->name) }}
+                </label>
+              </div>
+            @endforeach
           </div>
           <div class="form-group">
             <button class="btn-send">ENVIAR</button>

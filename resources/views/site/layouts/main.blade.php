@@ -42,7 +42,7 @@
                 <li><a href="#kit" class="anchorLink">EL KIT</a></li>
                 <li><a href="#">NUESTROS CLIENTES</a></li>
                 <li><a href="#">FAQ'S</a></li>
-                <li><a href="#">COMIENZA YA</a></li>
+                <li><a href="{!! URL::to('/ComienzaYA') !!}">COMIENZA YA</a></li>
               </ul>
             </div>
           </nav>

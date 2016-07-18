@@ -11,6 +11,13 @@ use Mail;
 
 class StartNowController extends Controller
 {
+  public function index() {
+
+    return view('site.startnow.index')->with([
+      'kits'  => Kit::where('id', '>', '1')->get()
+    ]);
+  }
+
   public function send(Request $request) {
     $startnow = $request->input('startnow');
     $startnow['kit'] = (string) $startnow['kit'];

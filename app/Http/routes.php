@@ -18,7 +18,17 @@ Route::group(['as' => 'site.'], function() {
     'uses'  => 'WelcomeController@index'
   ]);
 
-  Route::group(['prefix' => 'startnow', 'as' => 'startnow.'], function() {
+  Route::get('/comienzaya', [
+      'as'    => 'index',
+      'uses'  => 'StartNowController@index'
+    ]);
+
+  Route::group(['prefix' => 'ComienzaYA', 'as' => 'startnow.'], function() {
+    Route::get('/', [
+      'as'    => 'index',
+      'uses'  => 'StartNowController@index'
+    ]);
+
     Route::post('/send', [
       'as'    => 'send',
       'uses'  => 'StartNowController@send'

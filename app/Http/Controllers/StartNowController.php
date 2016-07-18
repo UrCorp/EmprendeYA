@@ -60,7 +60,7 @@ class StartNowController extends Controller
       $startnow['kit'] = Kit::find($startnow['kit_id']);
       unset($startnow['kit_id']);
 
-      $email_sent = Mail::send('site.emails.startnow', ['startnow' => $reg_startnow], function ($m) use ($reg_startnow) {
+      $email_sent = Mail::send('site.emails.startnow', ['startnow' => $startnow], function ($m) use ($startnow) {
         /*
         $m->from('urcorp@urcorp.mx', 'UrCorp Server');
         $m->replyTo('contacto@urcorp.mx', 'Contacto UrCorp');
@@ -69,7 +69,7 @@ class StartNowController extends Controller
         $m->subject('Cotización de Aplicaciones | UrCorp');
         */
         $m->from('emprendeya@emprendeya.org', 'EmprendeYA Server');
-        $m->replyTo($reg_startnow->email, $reg_startnow->name);
+        $m->replyTo($startnow['email'], $startnow['name']);
         $m->to('comienzaya@emprendeya.org', 'ComienzaYA');
 
         $m->subject('Solicitud de KIT | ComienzaYA');

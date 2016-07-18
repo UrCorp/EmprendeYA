@@ -4,7 +4,7 @@
   <div class="app-jumbotron col-md-12 no-side-padding">
     <div class="header">
       <header>
-        <h1 class="title fc-purple">TODO PARA TU<br/><b>OPORTUNIDAD</b></h1>
+        <h1 class="title">TODO PARA TU<br/><b>OPORTUNIDAD</b></h1>
       </header>
     </div>
     <div id="main-carousel" class="carousel slide" data-ride="carousel">
@@ -255,7 +255,7 @@
                   <span class="price">775<sup>00 MXN</sup><small>/mes</small></span>
                 </div>
                 <div class="btn-container">
-                  <a href="#" class="btn-chose initial">ELEGIR</a>
+                  <a href="{!! route('site.startnow.index', ['kit' => 'inicial']) !!}" class="btn-chose initial">ELEGIR</a>
                 </div>
               </th>
               <th>
@@ -264,7 +264,7 @@
                   <span class="price">999<sup>00 MXN</sup><small>/mes</small></span>
                 </div>
                 <div class="btn-container">
-                  <a href="#" class="btn-chose digital">ELEGIR</a>
+                  <a href="{!! route('site.startnow.index', ['kit' => 'digital']) !!}" class="btn-chose digital">ELEGIR</a>
                 </div>
               </th>
               <th>
@@ -273,7 +273,7 @@
                   <span class="price">1099<sup>00 MXN</sup><small>/mes</small></span>
                 </div>
                 <div class="btn-container">
-                  <a href="#" class="btn-chose integral">ELEGIR</a>
+                  <a href="{!! route('site.startnow.index', ['kit' => 'integral']) !!}" class="btn-chose integral">ELEGIR</a>
                 </div>
                </th> 
             </tr>
@@ -460,7 +460,7 @@
   </div>
 </section>
 <section>
-  <div class="app-faqs col-md-12 no-side-padding">
+  <div class="app-faq col-md-12 no-side-padding">
     <div class="col-md-10 col-md-offset-1 no-side-padding">
       <div class="col-md-5 no-side-padding text-center">
         <img src="{!! asset('public/assets/img/img-steve-jobs.svg') !!}" alt="Steve Jobs" title="Steve Jobs" class="img-steve-jobs" />
@@ -475,7 +475,7 @@
         <div class="col-md-12 no-side-padding">
           <div class="references">
             <h2 class="title">Preguntas Frecuentes</h2>
-            <a href="#" class="btn-faqs">FAQ'S</a>
+            <a href="{!! route('site.faq') !!}" class="btn-faq">FAQ'S</a>
           </div>
         </div>
       </div>
@@ -495,7 +495,7 @@
         <p>Escríbenos y nos pondremos en contacto lo más pronto posible para comenzar a apoyarte.</p>
       </div>
       <div class="start-form-container col-md-12 no-side-padding">
-        {!! Form::open(['route' => 'site.startnow.send', 'method' => 'POST']) !!}
+        {!! Form::open(['route' => 'site.startnow.mail', 'method' => 'POST']) !!}
           <div class="form-group">
             {!! Form::label('startnow[name]', 'NOMBRE*') !!}
             {!! Form::text('startnow[name]', null, ['class' => 'form-control']) !!}

@@ -46,7 +46,7 @@
             @foreach ($kits as $kit)
               <div class="col-md-4 no-side-padding">
                 <label>
-                  {!! Form::radio('startnow[kit]', $kit->slug, false, ['id' => 'kit-'.$kit->slug]) !!}
+                  {!! Form::radio('startnow[kit]', $kit->slug, $kit->slug === $kit_slug, ['id' => 'kit-'.$kit->slug]) !!}
                   KIT {{ cstrtoupper($kit->name) }}
                 </label>
               </div>

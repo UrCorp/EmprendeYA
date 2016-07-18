@@ -18,10 +18,10 @@ Route::group(['as' => 'site.'], function() {
     'uses'  => 'WelcomeController@index'
   ]);
 
-  Route::get('/comienzaya', [
-      'as'    => 'index',
-      'uses'  => 'StartNowController@index'
-    ]);
+  Route::get('/faq', [
+    'as'    => 'faq',
+    'uses'  => 'FaqController@index'
+  ]);
 
   Route::group(['prefix' => 'ComienzaYA', 'as' => 'startnow.'], function() {
     Route::get('/', [
@@ -32,6 +32,11 @@ Route::group(['as' => 'site.'], function() {
     Route::post('/send', [
       'as'    => 'send',
       'uses'  => 'StartNowController@send'
+    ]);
+
+    Route::post('/mail', [
+      'as'    => 'mail',
+      'uses'  => 'StartNowController@mail'
     ]);
   });
 

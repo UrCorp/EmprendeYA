@@ -20,6 +20,7 @@ class Kit extends Model implements SluggableInterface
 
   protected $fillable = [
     'name',
-    'slug'
+    'slug',
+    'price'
   ];
 }

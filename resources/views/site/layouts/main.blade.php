@@ -31,7 +31,7 @@
     <header>
       <div id="header" class="col-md-12 app-header no-side-padding">
         <div class="col-md-5 logo-container">
-          <a href="{!! URL::to('/') !!}">
+          <a href="{!! route('site.index') !!}">
             <img src="{!! asset('public/assets/img/logo.svg') !!}" alt="EmprendeYA Logotipo" title="Logotipo de EmprendeYA" class="app-logo">
           </a>
         </div>
@@ -39,10 +39,10 @@
           <nav>
             <div class="col-md-12 no-side-padding app-navbar">
               <ul>
-                <li><a href="#kit" class="anchorLink">EL KIT</a></li>
+                <li><a href="{!! (Route::is('site.index') ? '#kit' : URL::to('/#kit')) !!}" class="{!! (Route::is('site.index') ? 'anchorLink' : '') !!}">EL KIT</a></li>
                 <li><a href="#">NUESTROS CLIENTES</a></li>
-                <li><a href="#">FAQ'S</a></li>
-                <li><a href="{!! URL::to('/ComienzaYA') !!}">COMIENZA YA</a></li>
+                <li><a href="{!! route('site.faq') !!}">FAQ</a></li>
+                <li><a href="{!! route('site.startnow.index') !!}">COMIENZA YA</a></li>
               </ul>
             </div>
           </nav>

@@ -20,6 +20,7 @@ class CreateStartnowTable extends Migration
       $table->increments('id');
       $table->string('name', 60);
       $table->string('slug');
+      $table->decimal('price', 17, 4);
       $table->timestamps();
     });
 

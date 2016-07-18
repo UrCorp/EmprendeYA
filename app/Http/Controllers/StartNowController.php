@@ -11,10 +11,20 @@ use Mail;
 
 class StartNowController extends Controller
 {
-  public function index() {
+  public function index(Request $request) {
 
     return view('site.startnow.index')->with([
-      'kits'  => Kit::where('id', '>', '1')->get()
+      'kits'      => Kit::where('id', '>', '1')->get(),
+      'kit_slug'  => $request->input('kit')
+    ]);
+  }
+
+  public function mail(Request $request) {
+    $startnow = $request->input('startnow');
+    $startnow['kit'] = Kit::findBySlug($startnow['kit']);
+
+    return view('site.emails.startnow')->with([
+      'startnow'  => $startnow
     ]);
   }
 
@@ -46,6 +56,9 @@ class StartNowController extends Controller
       if (! $reg_startnow->save()) {
         return redirect()->route('site.index');
       }
+
+      $startnow['kit'] = Kit::find($startnow['kit_id']);
+      unset($startnow['kit_id']);
 
       $email_sent = Mail::send('site.emails.startnow', ['startnow' => $reg_startnow], function ($m) use ($reg_startnow) {
         /*

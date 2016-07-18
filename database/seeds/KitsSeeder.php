@@ -22,6 +22,7 @@ class KitsSeeder extends Seeder
     $tmp_date = date('Y-m-d H:i:s');
     Kit::create([
       'name'          => 'inicial',
+      'price'         => 775,
       'created_at'    => $tmp_date,
       'updated_at'    => $tmp_date
     ]);
@@ -29,6 +30,7 @@ class KitsSeeder extends Seeder
     $tmp_date = date('Y-m-d H:i:s');
     Kit::create([
       'name'          => 'digital',
+      'price'         => 999,
       'created_at'    => $tmp_date,
       'updated_at'    => $tmp_date
     ]);
@@ -36,6 +38,7 @@ class KitsSeeder extends Seeder
     $tmp_date = date('Y-m-d H:i:s');
     Kit::create([
       'name'          => 'integral',
+      'price'         => 1099,
       'created_at'    => $tmp_date,
       'updated_at'    => $tmp_date
     ]);

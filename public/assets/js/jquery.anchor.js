@@ -15,6 +15,7 @@ jQuery.fn.anchorAnimate = function(settings) {
       if ($header.length == 1) {
         destination -= $header.height();
       }
+      
       $("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination}, settings.speed, function() {
         window.location.hash = elementClick
       });

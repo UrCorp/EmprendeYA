@@ -9,7 +9,7 @@
 <div style="display:block;margin:auto;width:996px;background-color:#FFFFFF;">
   <div style="width:92%;display:block;margin:auto;padding:60px 25px;">
     <div style="width:100%;display:inline-block;margin:auto;text-align:center;">
-      <img src="{!! asset('public/assets/img/logo-2.svg') !!}" alt="Logo EmprendeYA y Proyecto PYME" title="EmprendeYA y ProyectoPYME" style="display:inline-block;width:432px;height:70px;margin-bottom:30px;" />
+      <img src="http://emprendeya.org/public/assets/img/logo-2.svg" alt="Logo EmprendeYA y Proyecto PYME" title="EmprendeYA y ProyectoPYME" style="display:inline-block;width:432px;height:70px;margin-bottom:30px;" />
     </div>
     <div style="width:100%;display:inline-block;margin:auto;text-align:center;">
       <h1 style="font-weight:bold;margin-bottom:30px;">DATOS DE COTIZACIÓN</h1>

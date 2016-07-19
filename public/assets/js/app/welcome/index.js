@@ -29,9 +29,12 @@ $(function() {
           '\t</div>'+
           '</div>'
         );
-        $('.modal-footer', $generalModal).html(
-          '<button type="button" class="btn btn-more-info">Más información</button>'
-        );
+        
+        if (data.description_source != "") {
+          $('.modal-footer', $generalModal).html(
+            '<a type="button" class="btn btn-more-info" href="'+data.description_source+'" target="__blank">Más información</a>'
+          );
+        }
       });
     });
   });

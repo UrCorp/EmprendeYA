@@ -124,7 +124,7 @@
             <!--[Tags: Accounting, Contax, Contabilidad]
             <div role="tabpanel" class="tab-pane" id="accounting">.5.</div>-->
             <div role="tabpanel" class="tab-pane" id="business-platform">
-              <embed src="{!! URL::to('public/files/app/faqs/aem.pdf') !!}" width="100%" height="500" alt="pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
+              <embed src="{!! URL::to('public/files/admin/documents/faqs/aem.pdf') !!}" width="100%" height="500" alt="pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
             </div>
             <div role="tabpanel" class="tab-pane" id="card-terminal">
               <article>

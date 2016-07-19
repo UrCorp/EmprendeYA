@@ -40,10 +40,17 @@ Route::group(['as' => 'site.'], function() {
     ]);
   });
 
-  Route::group(['prefix' => 'enterprises', 'as' => 'enterprises.'], function() {
+  Route::group(['prefix' => 'enterprises', 'as' => 'enterprise.'], function() {
     Route::get('/{enterprise}/description.json', [
       'as'    =>  'description',
       'uses'  =>  'EnterprisesController@description'
     ]);
+
+    Route::group(['prefix' => '{enterprise}/download', 'as' => 'download.'], function() { 
+      Route::get('description', [
+        'as'    =>  'description',
+        'uses'  =>  'EnterprisesController@download_description'
+      ]);
+    });
   });
 });

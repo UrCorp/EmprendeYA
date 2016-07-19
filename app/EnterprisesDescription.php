@@ -23,12 +23,22 @@ class EnterprisesDescription extends Model implements SluggableInterface
     'logo_path',
     'logo_file_name',
     'name',
-    'description'
+    'description',
+    'description_path',
+    'description_file_name'
   ];
 
-  protected $appends = ['logo_source'];
+  protected $appends = ['logo_source', 'description_source', 'link_download_description'];
 
   public function getLogoSourceAttribute() {
     return $this->attributes['logo_source'] = $this->logo_path.$this->logo_file_name;
+  }
+
+  public function getDescriptionSourceAttribute() {
+    return $this->attributes['description_source'] = $this->description_path.$this->description_file_name;
+  }
+
+  public function getLinkDownloadDescriptionAttribute() {
+    return $this->attributes['link_download_description'] = 'enterprises/'.$this->slug.'/download/description';
   }
 }

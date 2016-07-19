@@ -19,6 +19,8 @@ class CreateEnterprisesDescriptionTable extends Migration
       $table->text('logo_file_name');
       $table->string('name')->nullable();
       $table->text('description');
+      $table->text('description_path');
+      $table->text('description_file_name');
       $table->timestamps();
     });
   }

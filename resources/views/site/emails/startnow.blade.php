@@ -9,7 +9,7 @@
 <div style="display:block;margin:auto;width:996px;background-color:#FFFFFF;">
   <div style="width:92%;display:block;margin:auto;padding:60px 25px;">
     <div style="width:100%;display:inline-block;margin:auto;text-align:center;">
-      <img src="https://doc-08-5s-docs.googleusercontent.com/docs/securesc/71vdh2g93eu4vannirl3h1n6takb2eul/3m7aj3k4gqvemc5vk2ma1h4knv5ujika/1468886400000/14058214333761146473/14058214333761146473/0Bw5pmXFuJtBQOUR0SWxWaHFtQ3M?e=view" alt="Logo EmprendeYA y Proyecto PYME" title="EmprendeYA y ProyectoPYME" style="display:inline-block;width:432px;height:70px;margin-bottom:30px;" />
+      <img src="http://emprendeya.org/public/assets/img/logo-2.svg" alt="Logo EmprendeYA y Proyecto PYME" title="EmprendeYA y ProyectoPYME" style="display:inline-block;width:432px;height:70px;margin-bottom:30px;" />
     </div>
     <div style="width:100%;display:inline-block;margin:auto;text-align:center;">
       <h1 style="font-weight:bold;margin-bottom:30px;">DATOS DE COTIZACIÓN</h1>

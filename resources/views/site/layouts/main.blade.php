@@ -26,6 +26,7 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+@include('flash::message')
 <div class="container-fluid">
   <div class="row">
     <header>

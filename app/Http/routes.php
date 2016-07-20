@@ -28,7 +28,7 @@ Route::group(['as' => 'site.'], function() {
     'uses'  => 'FaqController@index'
   ]);
 
-  Route::group(['prefix' => 'ComienzaYA', 'as' => 'startnow.'], function() {
+  Route::group(['prefix' => 'comienzaya', 'as' => 'startnow.'], function() {
     Route::get('/', [
       'as'    => 'index',
       'uses'  => 'StartNowController@index'

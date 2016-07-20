@@ -19,6 +19,10 @@ class StartNow extends Model
     'kit_id'
   ];
 
+  public function kit() {
+    return $this->belongsTo('App\Kit');
+  }
+
   public function getNameAttribute() {
     return cucwords($this->attributes['name']);
   }

@@ -23,7 +23,7 @@ class StartNowController extends Controller
     $startnow = $request->input('startnow');
     $startnow['kit'] = Kit::findBySlug($startnow['kit']);
 
-    return view('site.emails.startnow')->with([
+    return view('site.emails.startnow_client')->with([
       'startnow'  => $startnow
     ]);
   }
@@ -60,7 +60,7 @@ class StartNowController extends Controller
       $startnow['kit'] = Kit::find($startnow['kit_id']);
       unset($startnow['kit_id']);
 
-      $email_sent = Mail::send('site.emails.startnow', ['startnow' => $startnow], function ($m) use ($startnow) {
+      $email_sent = Mail::send('site.emails.startnow_emprendeya', ['startnow' => $startnow], function ($m) use ($startnow) {
         /*
         $m->from('urcorp@urcorp.mx', 'UrCorp Server');
         $m->replyTo('contacto@urcorp.mx', 'Contacto UrCorp');
@@ -73,6 +73,20 @@ class StartNowController extends Controller
         $m->to('comienzaya@emprendeya.org', 'ComienzaYA');
 
         $m->subject('Solicitud de KIT | ComienzaYA');
+      });
+
+      if (! $email_sent) {
+        dd("Mensaje no enviado");
+        return redirect()->route('site.index');
+      }
+
+      $email_sent = Mail::send('site.emails.startnow_clients', ['startnow' => $startnow], function ($m) use ($startnow) {
+
+        $m->from('emprendeya@emprendeya.org', 'EmprendeYA Server');
+        $m->replyTo('comienzaya@emprendeya.org', 'ComienzaYA');
+        $m->to($startnow['email'], $startnow['name']);
+
+        $m->subject('Cotización de KIT '.cstrtoupper($startnow['kit']->name).' | ComienzaYA');
       });
 
       if (! $email_sent) {

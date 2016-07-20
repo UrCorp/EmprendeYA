@@ -249,206 +249,34 @@
               <th class="explanation">
                 <p>Elige los beneficios<br/>de acuerdo a tus<br/>necesidades:</p>
               </th>
+              @foreach ($kits as $kit)
               <th>
-                <h3 class="name">INICIAL</h3>
+                <h3 class="name">{!! cstrtoupper($kit->name) !!}</h3>
                 <div class="text-center">
-                  <span class="price">775<sup>00 MXN</sup><small>/mes</small></span>
+                  <span class="price">{!! number_format($kit->price, 0) !!}<sup>00 MXN</sup><small>/mes</small></span>
                 </div>
                 <div class="btn-container">
-                  <a href="{!! route('site.startnow.index', ['kit' => 'inicial']) !!}" class="btn-chose initial">ELEGIR</a>
+                  <a href="{!! route('site.startnow.index', ['kit' => $kit->slug]) !!}" class="btn-chose {!! $kit->slug !!}">ELEGIR</a>
                 </div>
               </th>
-              <th>
-                <h3 class="name">DIGITAL</h3>
-                <div class="text-center">
-                  <span class="price">999<sup>00 MXN</sup><small>/mes</small></span>
-                </div>
-                <div class="btn-container">
-                  <a href="{!! route('site.startnow.index', ['kit' => 'digital']) !!}" class="btn-chose digital">ELEGIR</a>
-                </div>
-              </th>
-              <th>
-                <h3 class="name">INTEGRAL</h3>
-                <div class="text-center">
-                  <span class="price">1099<sup>00 MXN</sup><small>/mes</small></span>
-                </div>
-                <div class="btn-container">
-                  <a href="{!! route('site.startnow.index', ['kit' => 'integral']) !!}" class="btn-chose integral">ELEGIR</a>
-                </div>
-               </th> 
+              @endforeach
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>Teléfono ilimitado y plan de datos</td>
-              <td>
-                <div class="check-container">
-                  <span class="fa fa-check"></span>
-                </div>
-              </td>
-              <td>
-                <div class="check-container">
-                  <span class="fa fa-check"></span>
-                </div>
-              </td>
-              <td>
-                <div class="check-container">
-                  <span class="fa fa-check"></span>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Financiamiento oportuno y sin trabas</td>
-              <td>
-                <div class="check-container">
-                  <span class="fa fa-check"></span>
-                </div>
-              </td>
-              <td>
-                <div class="check-container">
-                  <span class="fa fa-check"></span>
-                </div>
-              </td>
-              <td>
-                <div class="check-container">
-                  <span class="fa fa-check"></span>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Asesoría legal y contratos</td>
-              <td>
-                <div class="check-container">
-                  <span class="fa fa-check"></span>
-                </div>
-              </td>
-              <td>
-                <div class="check-container">
-                  <span class="fa fa-check"></span>
-                </div>
-              </td>
-              <td>
-                <div class="check-container">
-                  <span class="fa fa-check"></span>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Contratos, asesoría y servicios legales</td>
-              <td>
-                <div class="check-container">
-                  <span class="fa fa-check"></span>
-                </div>
-              </td>
-              <td>
-                <div class="check-container">
-                  <span class="fa fa-check"></span>
-                </div>
-              </td>
-              <td>
-                <div class="check-container">
-                  <span class="fa fa-check"></span>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Recibe pagos con tarjetas de crédito<br/>o débito</td>
-              <td>
-                <div class="check-container">
-                  <span class="fa fa-check"></span>
-                </div>
-              </td>
-              <td>
-                <div class="check-container">
-                  <span class="fa fa-check"></span>
-                </div>
-              </td>
-              <td>
-                <div class="check-container">
-                  <span class="fa fa-check"></span>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Plataforma de negocios con empresas<br/>de México y EEUU</td>
-              <td>
-                <div class="check-container">
-                  <span class="fa fa-check"></span>
-                </div>
-              </td>
-              <td>
-                <div class="check-container">
-                  <span class="fa fa-check"></span>
-                </div>
-              </td>
-              <td>
-                <div class="check-container">
-                  <span class="fa fa-check"></span>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Sistema de administración de tu negocio:<br/>Facturas, inventarios, ventas, etc.</td>
-              <td>
-                <div class="check-container">
-                  <span class="fa fa-check"></span>
-                </div>
-              </td>
-              <td>
-                <div class="check-container">
-                  <span class="fa fa-check"></span>
-                </div>
-              </td>
-              <td>
-                <div class="check-container">
-                  <span class="fa fa-check"></span>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Dominio, diseño de pagina web y<br/>correos electrónicos</td>
-              <td></td>
-              <td>
-                <div class="check-container">
-                  <span class="fa fa-check"></span>
-                </div>
-              </td>
-              <td>
-                <div class="check-container">
-                  <span class="fa fa-check"></span>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Diseño de logo e identidad corporativa</td>
-              <td></td>
-              <td></td>
-              <td>
-                <div class="check-container">
-                  <span class="fa fa-check"></span>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Diseño de tarjetas de presentación, <br/>papelería y hojas membretadas</td>
-              <td></td>
-              <td></td>
-              <td>
-                <div class="check-container">
-                  <span class="fa fa-check"></span>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Diseño de plantillas PPT y PDF</td>
-              <td></td>
-              <td></td>
-              <td>
-                <div class="check-container">
-                  <span class="fa fa-check"></span>
-                </div>
-              </td>
-            </tr>
+            @foreach ($services as $service)
+              <tr>
+                <td>{!! $service->description !!}</td>
+              @foreach ($kits as $kit)
+                <td><?php
+                if ($service->kits->where('slug', $kit->slug)->count()) { 
+                ?><div class="check-container">
+                    <span class="fa fa-check"></span>
+                  </div>
+                <?php } ?>
+                </td>
+              @endforeach
+              </tr>
+            @endforeach
           </tbody>
         </table>
       </div>
@@ -495,7 +323,7 @@
         <p>Escríbenos y nos pondremos en contacto lo más pronto posible para comenzar a apoyarte.</p>
       </div>
       <div class="start-form-container col-md-12 no-side-padding">
-        {!! Form::open(['route' => 'site.startnow.mail', 'method' => 'POST']) !!}
+        {!! Form::open(['route' => 'site.startnow.send', 'method' => 'POST']) !!}
           <div class="form-group">
             {!! Form::label('startnow[name]', 'NOMBRE*') !!}
             {!! Form::text('startnow[name]', null, ['class' => 'form-control']) !!}

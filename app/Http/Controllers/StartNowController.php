@@ -80,7 +80,7 @@ class StartNowController extends Controller
         return redirect()->route('site.index');
       }
 
-      $email_sent = Mail::send('site.emails.startnow_clients', ['startnow' => $startnow], function ($m) use ($startnow) {
+      $email_sent = Mail::send('site.emails.startnow_client', ['startnow' => $startnow], function ($m) use ($startnow) {
 
         $m->from('emprendeya@emprendeya.org', 'EmprendeYA Server');
         $m->replyTo('comienzaya@emprendeya.org', 'ComienzaYA');

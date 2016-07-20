@@ -26,7 +26,7 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
-@include('flash::message')
+@include('vendor.flash.message')
 <div class="container-fluid">
   <div class="row">
     <header>
@@ -74,6 +74,7 @@
 <!-- [START JavaScript Files] -->
 <script type="text/javascript" src="{!! asset('public/assets/js/jquery.min.js') !!}"></script>
 <script type="text/javascript" src="{!! asset('public/assets/js/jquery.anchor.js') !!}"></script>
+<script type="text/javascript" src="{!! asset('public/assets/js/jquery.validate.js') !!}"></script>
 <script type="text/javascript" src="{!! asset('public/assets/js/bootstrap.min.js') !!}"></script>
 <script type="text/javascript" src="{!! asset('public/assets/js/app.js') !!}"></script>
 @yield('scripts')

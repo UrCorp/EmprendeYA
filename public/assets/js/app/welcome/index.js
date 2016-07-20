@@ -38,4 +38,27 @@ $(function() {
       });
     });
   });
+
+  var startnow_validator = $('#startnow-form').validate({
+    messages: {
+      "startnow[name]": {
+        required: "Por favor, introduzca su nombre."
+      },
+      "startnow[phone]": {
+        required: "Por favor, introduzca su número de teléfono o celular.",
+        pattern: "El número telefonico unicamente debe contener dígitos."
+      },
+      "startnow[email]": {
+        required: "Por favor, introduzca su correo electrónico.",
+        pattern: "El correo electrónico es inválido."
+      },
+      "startnow[email]": {
+        required: "Por favor, introduzca su correo electrónico.",
+        pattern: "El correo electrónico es inválido."
+      },
+      "startnow[turn]": {
+        required: "Por favor, introduzca el giro de su empresa.",
+      },
+    }
+  });
 });

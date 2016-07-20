@@ -23,7 +23,7 @@
                 </div>
                 <div class="col-md-9">
                   <p>Empresa de Artesanías y artículos de diversión que demuestran la creatividad y la mano de obra mexicana de excelente calidad de exportación. Con un crecimiento sostenido y clientes en la República Mexicana y Estados Unidos, BBetos se está consolidando como un negocio fuerte y prometedor. En Proyecto PyME queremos colaborar con su crecimiento sostenido.</p>
-                  <a class="pull-right more-info">MÁS INFORMACIÓN</a>
+                  <a href="http://www.bbetos.com.mx/Inicio.html" target="__blank" class="pull-right more-info">MÁS INFORMACIÓN</a>
                 </div>
               </div>
             </div>
@@ -41,7 +41,7 @@
                 </div>
                 <div class="col-md-9">
                   <p>Outcom es una agencia que ofrece servicios de comunicación, diseño gráfico, programación web y producción de video, con un enfoque estratégico para maximizar el potencial de su marca. Vendemos solo que necesita, y lo acompañamos en el proceso de implementación.  Ya sea una empresa de 10 o de 100 empleados, en Outcom contamos con la capacidad para resolver problemas internos y externos que se relacionen con su imagen corporativa, publicidad y recurso humano.</p>
-                  <a class="pull-right more-info">MÁS INFORMACIÓN</a>
+                 <!--<a href="#" target="__blank" class="pull-right more-info">MÁS INFORMACIÓN</a>-->
                 </div>
               </div>
             </div>
@@ -59,7 +59,7 @@
                 </div>
                 <div class="col-md-9">
                   <p>Hot Dogs “La congregación” es un establecimiento de Hot Dogs, que lleva años en el mercado y a adquirido mucha reputación en el ámbito de comida rápida, actualmente se han actualizado y ha abierto su negocio a nuevos mercados, como lo son eventos privados, festivales y servicio a domicilio.</p>
-                  <a class="pull-right more-info">MÁS INFORMACIÓN</a>
+                  <!--<a href="#" target="__blank" class="pull-right more-info">MÁS INFORMACIÓN</a>-->
                 </div>
               </div>
             </div>

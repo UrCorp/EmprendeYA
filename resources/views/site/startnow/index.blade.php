@@ -14,6 +14,7 @@
       </div>
       <div class="start-form-container col-md-12 no-side-padding">
         {!! Form::open(['route' => 'site.startnow.send', 'method' => 'POST']) !!}
+          {!! Form::hidden('from', 'startnow') !!}
           <div class="form-group">
             {!! Form::label('startnow[name]', 'NOMBRE*') !!}
             {!! Form::text('startnow[name]', null, ['class' => 'form-control']) !!}

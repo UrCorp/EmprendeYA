@@ -311,7 +311,7 @@
   </div>
 </section>
 <section>
-  <div class="app-start-now col-md-12 no-side-padding">
+  <div id="comienzaya" class="app-start-now col-md-12 no-side-padding">
     <div class="col-md-6 col-md-offset-3">
       <div class="header">
         <header>
@@ -323,34 +323,77 @@
         <p>Escríbenos y nos pondremos en contacto lo más pronto posible para comenzar a apoyarte.</p>
       </div>
       <div class="start-form-container col-md-12 no-side-padding">
-        {!! Form::open(['route' => 'site.startnow.send', 'method' => 'POST']) !!}
+        {!! Form::open(['route' => 'site.startnow.send', 'method' => 'POST', 'id' => 'startnow-form']) !!}
+          {!! Form::hidden('from', 'index') !!}
           <div class="form-group">
             {!! Form::label('startnow[name]', 'NOMBRE*') !!}
-            {!! Form::text('startnow[name]', null, ['class' => 'form-control']) !!}
+            {!! Form::text('startnow[name]', old('startnow[name]'), ['class' => 'form-control', 'required' => 'required', 'maxlength' => 60]) !!}
+
+            @if ($errors->has('name'))
+              <span class="help-block">
+                <strong>{{ $errors->first('name') }}</strong>
+              </span>
+            @endif
           </div>
           <div class="form-group">
             {!! Form::label('startnow[phone]', 'TELEFONO*') !!}
-            {!! Form::text('startnow[phone]', null, ['class' => 'form-control']) !!}
+            {!! Form::text('startnow[phone]', old('startnow[phone]'), ['class' => 'form-control', 'pattern' => '[0-9]{10,15}', 'required' => 'required']) !!}
+
+            @if ($errors->has('phone'))
+              <span class="help-block">
+                <strong>{{ $errors->first('phone') }}</strong>
+              </span>
+            @endif
           </div>
           <div class="form-group">
             {!! Form::label('startnow[email]', 'EMAIL*') !!}
-            {!! Form::email('startnow[email]', null, ['class' => 'form-control']) !!}
+            {!! Form::email('startnow[email]', old('startnow[email]'), ['class' => 'form-control', 'required' => 'required', 'maxlength' => 255]) !!}
+
+            @if ($errors->has('email'))
+              <span class="help-block">
+                <strong>{{ $errors->first('email') }}</strong>
+              </span>
+            @endif
           </div>
           <div class="form-group">
             {!! Form::label('startnow[company]', 'NOMBRE DE LA EMPRESA') !!}
-            {!! Form::text('startnow[company]', null, ['class' => 'form-control']) !!}
+            {!! Form::text('startnow[company]', old('startnow[company]'), ['class' => 'form-control', 'maxlength' => 60]) !!}
+
+            @if ($errors->has('company'))
+              <span class="help-block">
+                <strong>{{ $errors->first('company') }}</strong>
+              </span>
+            @endif
           </div>
           <div class="form-group">
             {!! Form::label('startnow[city]', 'CIUDAD') !!}
-            {!! Form::text('startnow[city]', null, ['class' => 'form-control']) !!}
+            {!! Form::text('startnow[city]', old('startnow[city]'), ['class' => 'form-control', 'maxlength' => 60]) !!}
+
+            @if ($errors->has('city'))
+              <span class="help-block">
+                <strong>{{ $errors->first('city') }}</strong>
+              </span>
+            @endif
           </div>
           <div class="form-group">
             {!! Form::label('startnow[turn]', 'GIRO DE LA EMPRESA*') !!}
-            {!! Form::text('startnow[turn]', null, ['class' => 'form-control']) !!}
+            {!! Form::text('startnow[turn]', old('startnow[turn]'), ['class' => 'form-control', 'required' => 'required', 'maxlength' => 60]) !!}
+
+            @if ($errors->has('turn'))
+              <span class="help-block">
+                <strong>{{ $errors->first('turn') }}</strong>
+              </span>
+            @endif
           </div>
           <div class="form-group">
             {!! Form::label('startnow[subject]', 'CUENTANOS MÁS DE TU PROYECTO') !!}
-            {!! Form::textarea('startnow[subject]', null, ['class' => 'form-control', 'rows' => '4']) !!}
+            {!! Form::textarea('startnow[subject]', old('startnow[subject]'), ['class' => 'form-control', 'rows' => '4', 'maxlength' => 500]) !!}
+
+            @if ($errors->has('subject'))
+              <span class="help-block">
+                <strong>{{ $errors->first('subject') }}</strong>
+              </span>
+            @endif
           </div>
           <div class="form-group">
             @foreach ($kits as $kit)
@@ -362,6 +405,11 @@
               </div>
             @endforeach
           </div>
+          @if ($errors->has('kit_id'))
+            <span class="help-block" style="margin-top:50px;margin-bottom:-20px;">
+              <strong>{{ $errors->first('kit_id') }}</strong>
+            </span>
+          @endif
           <div class="form-group">
             <button class="btn-send">ENVIAR</button>
           </div>

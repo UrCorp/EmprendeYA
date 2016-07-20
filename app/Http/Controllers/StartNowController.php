@@ -19,20 +19,8 @@ class StartNowController extends Controller
     ]);
   }
 
-  public function mail(Request $request) {
-    $startnow = $request->input('startnow');
-    $startnow['kit'] = Kit::findBySlug($startnow['kit']);
-
-    return view('site.emails.startnow_client')->with([
-      'startnow'  => $startnow
-    ]);
-  }
-
   public function send(Request $request) {
     $startnow = $request->input('startnow');
-    $startnow['kit'] = (string) $startnow['kit'];
-    $kit_id = (int) Kit::findBySlug($startnow['kit'])->id;
-    $startnow['kit_id'] = $kit_id;
 
     $validator = Validator::make($startnow, [
       'name'      => 'required|max:60',
@@ -46,15 +34,33 @@ class StartNowController extends Controller
     ]);
 
     if ($validator->fails()) {
-      return redirect()->route('site.index')
+      $from = $request->input('from');
+      $url = null;
+
+      switch ($from) {
+        case 'startnow':
+          $url = '/comienzaya/';
+          break;
+          
+        case 'index':
+        default:
+          $url = '/#comienzaya';
+          break;
+      }
+
+      return redirect($url)
               ->withErrors($validator)
               ->withInput();
     } else {
+      $startnow['kit'] = (string) $startnow['kit'];
+      $kit_id = (int) Kit::findBySlug($startnow['kit'])->id;
+      $startnow['kit_id'] = $kit_id;
+
       $reg_startnow = new StartNow();
       $reg_startnow->fill($startnow);
 
       if (! $reg_startnow->save()) {
-        flash()->overlay('Error', 'Ocurrió un error en el servidor. Por favor intentelo más tarde.');
+        flash()->overlay('Ocurrió un error en el servidor. Por favor intentelo más tarde.', 'Error');
 
         return redirect()->route('site.index');
       }
@@ -80,12 +86,12 @@ class StartNowController extends Controller
       });
 
       if (!$enterprise_mail_sent || !$client_mail_sent) {
-        flash()->overlay('Error', 'Ocurrió un error en el servidor. Por favor intentelo más tarde');
+        flash()->overlay('Ocurrió un error en el servidor. Por favor intentelo más tarde.', 'Error');
 
         return redirect()->route('site.index');
       }
 
-      flash()->overlay('ComienzaYA', 'Tu información ha sido enviada, nos comunicaremos en breve contigo para comenzar a desarrollar tu kit.');
+      flash()->overlay('Tu información ha sido enviada, nos comunicaremos en breve contigo para comenzar a desarrollar tu kit.', 'ComienzaYA');
       return redirect()->route('site.index');
     }
   }

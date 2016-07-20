@@ -601,6 +601,19 @@ body {
   background-color: #40C100;
 }
 
+.app-start-now .start-form-container .help-block strong {
+  cursor: pointer;
+  background-color: #FFFFFF;
+  color: red;
+  font-size: 18px;
+  font-weight: normal !important;
+  position: relative;
+  margin-left: 35px;
+  bottom: -5px !important;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
 .app-enterprise-description .logo {
   display: block;
   margin: auto;
@@ -815,6 +828,11 @@ body {
   color: #000000;
   font-size: 26px;
   opacity: 1;
+}
+
+.modal-body {
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .modal-footer .btn-more-info {

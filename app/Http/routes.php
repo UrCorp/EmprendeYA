@@ -38,11 +38,6 @@ Route::group(['as' => 'site.'], function() {
       'as'    => 'send',
       'uses'  => 'StartNowController@send'
     ]);
-
-    Route::post('/mail', [
-      'as'    => 'mail',
-      'uses'  => 'StartNowController@mail'
-    ]);
   });
 
   Route::group(['prefix' => 'enterprises', 'as' => 'enterprise.'], function() {

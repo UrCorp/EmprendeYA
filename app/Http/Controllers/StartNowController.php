@@ -54,20 +54,15 @@ class StartNowController extends Controller
       $reg_startnow->fill($startnow);
 
       if (! $reg_startnow->save()) {
+        flash()->overlay('Error', 'Ocurrió un error en el servidor. Por favor intentelo más tarde.');
+
         return redirect()->route('site.index');
       }
 
       $startnow['kit'] = Kit::find($startnow['kit_id']);
       unset($startnow['kit_id']);
 
-      $email_sent = Mail::send('site.emails.startnow_emprendeya', ['startnow' => $startnow], function ($m) use ($startnow) {
-        /*
-        $m->from('urcorp@urcorp.mx', 'UrCorp Server');
-        $m->replyTo('contacto@urcorp.mx', 'Contacto UrCorp');
-        $m->to($quotation['contact']['email'], $quotation['contact']['name'])
-          ->cc('contacto@urcorp.mx', 'Contacto UrCorp');
-        $m->subject('Cotización de Aplicaciones | UrCorp');
-        */
+      $enterprise_mail_sent = Mail::send('site.emails.startnow_emprendeya', ['startnow' => $startnow], function ($m) use ($startnow) {
         $m->from('emprendeya@emprendeya.org', 'EmprendeYA Server');
         $m->replyTo($startnow['email'], $startnow['name']);
         $m->to('comienzaya@emprendeya.org', 'ComienzaYA');
@@ -75,12 +70,7 @@ class StartNowController extends Controller
         $m->subject('Solicitud de KIT | ComienzaYA');
       });
 
-      if (! $email_sent) {
-        dd("Mensaje no enviado");
-        return redirect()->route('site.index');
-      }
-
-      $email_sent = Mail::send('site.emails.startnow_client', ['startnow' => $startnow], function ($m) use ($startnow) {
+      $client_mail_sent = Mail::send('site.emails.startnow_client', ['startnow' => $startnow], function ($m) use ($startnow) {
 
         $m->from('emprendeya@emprendeya.org', 'EmprendeYA Server');
         $m->replyTo('comienzaya@emprendeya.org', 'ComienzaYA');
@@ -89,12 +79,13 @@ class StartNowController extends Controller
         $m->subject('Cotización de KIT '.cstrtoupper($startnow['kit']->name).' | ComienzaYA');
       });
 
-      if (! $email_sent) {
-        dd("Mensaje no enviado");
+      if (!$enterprise_mail_sent || !$client_mail_sent) {
+        flash()->overlay('Error', 'Ocurrió un error en el servidor. Por favor intentelo más tarde');
+
         return redirect()->route('site.index');
       }
 
-      dd("Mensaje enviado");
+      flash()->overlay('ComienzaYA', 'Tu información ha sido enviada, nos comunicaremos en breve contigo para comenzar a desarrollar tu kit.');
       return redirect()->route('site.index');
     }
   }

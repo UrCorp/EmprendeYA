@@ -40,7 +40,7 @@
             <div class="col-md-12 no-side-padding app-navbar">
               <ul>
                 <li><a href="{!! (Route::is('site.index') ? '#kit' : URL::to('/#kit')) !!}" class="{!! (Route::is('site.index') ? 'anchorLink' : '') !!}">EL KIT</a></li>
-                <li><a href="#">NUESTROS CLIENTES</a></li>
+                <li><a href="{!! route('site.clients') !!}">NUESTROS CLIENTES</a></li>
                 <li><a href="{!! route('site.faq') !!}">FAQ</a></li>
                 <li><a href="{!! route('site.startnow.index') !!}">COMIENZA YA</a></li>
               </ul>

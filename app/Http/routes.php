@@ -18,6 +18,11 @@ Route::group(['as' => 'site.'], function() {
     'uses'  => 'WelcomeController@index'
   ]);
 
+  Route::get('/clients', [
+    'as'    => 'clients',
+    'uses'  => 'ClientsController@index'
+  ]);
+
   Route::get('/faq', [
     'as'    => 'faq',
     'uses'  => 'FaqController@index'

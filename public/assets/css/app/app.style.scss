@@ -724,6 +724,70 @@ body {
   margin-bottom: 15px;
 }
 
+.app-clients {
+  padding: 40px 0 60px 0;
+}
+
+.app-clients .header .title {
+  font-size: 60px;
+  line-height: 72px;
+  color: #5E5E5E;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.app-clients .clients-container .client .header .title {
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.app-clients .clients-container .client p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.app-clients .clients-container .client .more-info {
+  margin-top: 10px;
+  cursor: pointer;
+  color: #000000;
+  padding: 4px 8px;
+  border-bottom: 1px solid #000000;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.app-clients .clients-container .client .more-info:hover {
+  color: #333333;
+  border-bottom: 1px solid #555555;
+}
+
+.app-clients .aside .title {
+  padding: 4px 2px;
+  font-size: 28px;
+  font-weight: 34px;
+  line-height: 34px;
+  border-bottom: 1px solid #FF00FF;
+}
+
+.app-clients .aside ul {
+  margin-top: 15px;
+  padding: 0;
+  list-style: none;
+}
+
+.app-clients .aside ul li {
+  margin-bottom: 10px;
+}
+
+.app-clients .aside ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  line-height: 22px;
+}
+
 /* RESPONSIVE
    ========================================================================= */
 

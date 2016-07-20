@@ -30,7 +30,9 @@
           <div class="tab-content">
             <div role="tabpanel" class="tab-pane active" id="phone">
               <article>
-                <h2 class="title">TELCEL</h2>
+                <header>
+                  <h2 class="title">TELCEL</h2>
+                </header>
                 <h3>¿Qué hago si no tengo servicio de Internet (datos)?</h3>
                 <ul>
                   <li>Verifica que la itinerancia de datos de tu teléfono (Roaming de datos) esté activada.</li>
@@ -66,7 +68,9 @@
             </div>
             <div role="tabpanel" class="tab-pane" id="financing">
               <article>
-                <h2 class="title">PROYECTO PYME</h2>
+                <header>
+                  <h2 class="title">PROYECTO PYME</h2>
+                </header>
                 <h3>¿Por qué Proyecto PyME?</h3>
                 <p>8 de cada 10 empleos en México son generados por PyMES. El 25% del PIB del país es generado por las PYMES Y sin embargo solo el 13% de estas son atendidas por las instituciones bancarias.</p>
                 <p>Proyecto PYME, conociendo que la pobreza en México no se puede combatir limitando los recursos a quienes los necesitan para trabajar, nace en Querétaro desde 2010 para dar servicio a estas personas y empresas que necesitan de un apoyo para lograr hacer cada vez mas negocio y así romper el círculo vicioso que les limita.</p>
@@ -104,7 +108,9 @@
             </div>
             <div role="tabpanel" class="tab-pane" id="legal">
               <article>
-                <h2 class="title">LEGALARIO</h2>
+                <header>
+                  <h2 class="title">LEGALARIO</h2>
+                </header>
                 <h3>¿Cómo se qué documento o contrato es el que necesito?</h3>
                 <p>Cada documento tiene un resumen que explica al usuario para lo que se debe utilizar.</p>
                 <h3>¿Los contratos y documentos que elabore en la plataforma, puedo almacenarlos?</h3>
@@ -124,11 +130,15 @@
             <!--[Tags: Accounting, Contax, Contabilidad]
             <div role="tabpanel" class="tab-pane" id="accounting">.5.</div>-->
             <div role="tabpanel" class="tab-pane" id="business-platform">
-              <embed src="{!! URL::to('public/files/admin/documents/faqs/aem.pdf') !!}" width="100%" height="500" alt="pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
+              <div class="embed-responsive embed-responsive-16by9">
+                <embed  class="embed-responsive-item" src="{!! URL::to('public/files/admin/documents/faqs/aem.pdf') !!}" width="100%" height="500" alt="pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
+              </div>
             </div>
             <div role="tabpanel" class="tab-pane" id="card-terminal">
               <article>
-                <h2 class="title">Señor Pago</h2>
+                <header>
+                  <h2 class="title">Señor Pago</h2>
+                </header>
                 <h3>¿Qué es Sr.Pago?</h3>
                 <p>Sr. Pago es el dispositivo que te permite recibir pagos con tarjetas desde smartphones o tablets de las plataformas iOS* (iPod, iPad, iPhone) o Android* Podrás disponer de tu dinero con tu tarjeta Sr. Pago MasterCard cajeros automáticos ó comprando en cualquiera de los miles de comercios afiliados a MasterCard.</p>
                 <h3>¿Como me registro?</h3>
@@ -158,7 +168,9 @@
             </div>
             <div role="tabpanel" class="tab-pane" id="management">
               <article>
-                <h2>ROCKETUM</h2>
+                <header>
+                  <h2 class="title">ROCKETUM</h2>
+                </header>
                 <h3>¿Qué es Rocketum?</h3>
                 <p>ROCKETUM es el primer ERP diseñado especialmente para emprendedores y MiPymes que buscan una adecuada administración de sus negocios.</p>
                 <h3>¿En que te puede ayudar Rocketum?</h3>

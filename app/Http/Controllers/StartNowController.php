@@ -21,6 +21,10 @@ class StartNowController extends Controller
 
   public function send(Request $request) {
     $startnow = $request->input('startnow');
+    
+    $startnow['kit'] = (string) $startnow['kit'];
+    $kit_id = (int) Kit::findBySlug($startnow['kit'])->id;
+    $startnow['kit_id'] = $kit_id;
 
     $validator = Validator::make($startnow, [
       'name'      => 'required|max:60',
@@ -52,10 +56,6 @@ class StartNowController extends Controller
               ->withErrors($validator)
               ->withInput();
     } else {
-      $startnow['kit'] = (string) $startnow['kit'];
-      $kit_id = (int) Kit::findBySlug($startnow['kit'])->id;
-      $startnow['kit_id'] = $kit_id;
-
       $reg_startnow = new StartNow();
       $reg_startnow->fill($startnow);
 

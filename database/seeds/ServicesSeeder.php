@@ -30,12 +30,12 @@ class ServicesSeeder extends Seeder
 
     Service::create([
       'name'          => 'legal',
-      'description'   => 'Asesoría legal y contratos'
+      'description'   => 'Contratos, asesoría y servicios legales'
     ]);
 
     Service::create([
       'name'          => 'contabilidad',
-      'description'   => 'Contratos, asesoría y servicios legales'
+      'description'   => 'Servicios contables, fiscal y financieros.'
     ]);
 
     Service::create([
@@ -55,12 +55,12 @@ class ServicesSeeder extends Seeder
 
     Service::create([
       'name'          => 'pagina web',
-      'description'   => 'Dominio, diseño de pagina web y<br/>correos electrónicos'
+      'description'   => 'Dominio y correo electrónico<br/> con el nombre de tu empresa'
     ]);
 
     Service::create([
-      'name'          => 'diseño corporativo',
-      'description'   => 'Diseño de logo e identidad corporativa'
+      'name'          => 'diseño de página web',
+      'description'   => 'Diseño de página web'
     ]);
 
     Service::create([
@@ -84,10 +84,10 @@ class ServicesSeeder extends Seeder
       }
 
       if ($j == 0) {
-        $n = 7;
+        $n = 8;
       }
       else if ($j == 1) {
-        $n = 8;
+        $n = 9;
       } 
       else if ($j == 2) {
         $n = 11;

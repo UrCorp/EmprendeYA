@@ -37,7 +37,7 @@
   <div class="app-quotes col-md-12 no-side-padding">
     <div class="header">
       <header>
-        <h2 class="title"><img src="{!! asset('public/assets/img/icon-quotation-marks-1.svg') !!}" alt="Comillas 1" title="Quotes" class="icon">QUOTES</h2>
+        <h2 class="title"><img src="{!! asset('public/assets/img/icon-quotation-marks-1.svg') !!}" alt="Comillas 1" title="Quotes" class="icon">TESTIMONIALES</h2>
       </header>
     </div>
     <div id="quotes-carousel" class="carousel slide" data-ride="carousel">
@@ -121,8 +121,9 @@
         <div class="text-center">
           <img src="{!! asset('public/assets/img/logo-2.svg') !!}" alt="Proyecto PyME - EmprendeYA" title="Proyecto PyME - EmprendeYA" class="img-logo" />
         </div>
-        <div class="col-md-8 col-md-offset-2 text-center">
+        <div class="col-md-8 col-md-offset-2 text-justify">
           <p class="explanation">El Kit incluye todo esto, estamos respaldados por las mejores empresas en México para que tengas a tu disposición todas las herramientas que necesitas.</p>
+          <p class="explanation">Para más información da click en cada uno de los servicios:</p>
         </div>
       </header>
       <div class="col-md-12 no-side-padding">

@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=1366px">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EmprendeYA</title>
   <!-- [START Cascade Style Sheet Files] -->
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,400italic,300italic' rel='stylesheet' type='text/css'>
@@ -10,6 +10,14 @@
   <link rel="stylesheet" type="text/css" href="{!! asset('public/assets/css/font-awesome.min.css') !!}">
   <link rel="stylesheet" type="text/css" href="{!! asset('public/assets/css/style.css') !!}">
   <!-- [END Cascade Style Sheet Files] -->
+  <!-- [START Favicon] -->
+  <link rel="apple-touch-icon" sizes="180x180" href="{!! asset('public/assets/img/favicon/apple-touch-icon.png') !!}">
+  <link rel="icon" type="image/png" href="{!! asset('public/assets/img/favicon/favicon-32x32.png') !!}" sizes="32x32">
+  <link rel="icon" type="image/png" href="{!! asset('public/assets/img/favicon/favicon-16x16.png') !!}" sizes="16x16">
+  <link rel="manifest" href="{!! asset('public/assets/img/favicon/manifest.json') !!}">
+  <link rel="mask-icon" href="{!! asset('public/assets/img/favicon/safari-pinned-tab.svg') !!}" color="#d55b8e">
+  <meta name="theme-color" content="#ffffff">
+  <!-- [END Favicon] -->
 </head>
 <body>
 <div id="generalModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
@@ -19,7 +27,6 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       </div>
       <div class="modal-body">
-
       </div>
       <div class="modal-footer">
       </div>
@@ -31,12 +38,12 @@
   <div class="row">
     <header>
       <div id="header" class="col-md-12 app-header no-side-padding">
-        <div class="col-md-5 logo-container">
+        <div class="col-md-5 col-sm-4 logo-container">
           <a href="{!! route('site.index') !!}">
             <img src="{!! asset('public/assets/img/logo.svg') !!}" alt="EmprendeYA Logotipo" title="Logotipo de EmprendeYA" class="app-logo">
           </a>
         </div>
-        <div class="col-md-7">
+        <div class="col-md-7 col-sm-8 no-side-padding">
           <nav>
             <div class="col-md-12 no-side-padding app-navbar">
               <ul>
@@ -52,19 +59,19 @@
     </header>
     @yield('content')
     <footer>
-      <div class="app-footer col-md-12">
-        <div class="main-links col-md-6">
-          <div class="col-md-4 no-side-padding text-center">
+      <div class="app-footer col-xs-12">
+        <div class="main-links col-lg-6 col-md-8 col-sm-10">
+          <div class="col-sm-4 no-side-padding text-center">
             <a href="#">ACERCA DE</a>
           </div>
-          <div class="col-md-4 no-side-padding text-center">
+          <div class="col-sm-4 no-side-padding text-center">
             <a href="#">AVISO DE PRIVACIDAD</a>
           </div>
-          <div class="col-md-4 no-side-padding text-center">
+          <div class="col-sm-4 no-side-padding text-center">
             <a href="#">POLITICA DE COOKIES</a>
           </div>
         </div>
-        <div class="col-md-2 col-md-offset-4 text-center">
+        <div class="col-lg-2 col-lg-offset-4 col-md-2 col-md-offset-2 col-sm-2 text-center">
           <img src="{!! asset('public/assets/img/logo-3.svg') !!}" alt="Globo de EmprendeYA" title="EmprendeYA" class="logo-globe">
         </div>
       </div>

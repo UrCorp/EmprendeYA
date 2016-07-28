@@ -1,7 +1,7 @@
 @extends('site.layouts.main')
 @section('content')
 <section>
-  <div class="app-jumbotron col-md-12 no-side-padding">
+  <div class="app-jumbotron col-xs-12 no-side-padding">
     <div class="header">
       <header>
         <h1 class="title">TODO PARA TU<br/><b>OPORTUNIDAD</b></h1>
@@ -34,7 +34,7 @@
   </div>
 </section>
 <section>
-  <div class="app-quotes col-md-12 no-side-padding">
+  <div class="app-quotes col-xs-12 no-side-padding">
     <div class="header">
       <header>
         <h2 class="title"><img src="{!! asset('public/assets/img/icon-quotation-marks-1.svg') !!}" alt="Comillas 1" title="Quotes" class="icon">TESTIMONIALES</h2>
@@ -94,13 +94,13 @@
   </div>
 </section>
 <section>
-  <div id="kit" class="app-kit col-md-12">
+  <div id="kit" class="app-kit col-xs-12">
     <article>
-      <div class="col-md-12 no-side-padding">
-        <div class="col-md-4 no-side-padding text-center">
+      <div class="col-xs-12 no-side-padding">
+        <div class="col-md-4 col-sm-3 no-side-padding text-center">
           <div title="El Kit Emprendedor" class="img-kit"></div>
         </div>
-        <div class="col-md-8 no-side-padding">
+        <div class="col-md-8 col-sm-9 no-side-padding">
           <div class="header">
             <header>
               <h2 class="title"><b>EL KIT</b><br/>EMPRENDEDOR</h2>
@@ -115,20 +115,20 @@
   </div>
 </section>
 <section>
-  <div class="app-services col-md-12 no-side-padding">
+  <div class="app-services col-xs-12 no-side-padding">
     <div class="header">
       <header>
         <div class="text-center">
           <img src="{!! asset('public/assets/img/logo-2.svg') !!}" alt="Proyecto PyME - EmprendeYA" title="Proyecto PyME - EmprendeYA" class="img-logo" />
         </div>
-        <div class="col-md-8 col-md-offset-2 text-justify">
+        <div class="col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 text-justify">
           <p class="explanation">El Kit incluye todo esto, estamos respaldados por las mejores empresas en México para que tengas a tu disposición todas las herramientas que necesitas.</p>
           <p class="explanation">Para más información da click en cada uno de los servicios:</p>
         </div>
       </header>
-      <div class="col-md-12 no-side-padding">
-        <div class="col-md-8 col-md-offset-2 list no-side-padding">
-          <div class="item item-1 col-md-3" data-name="telcel">
+      <div class="col-xs-12 no-side-padding">
+        <div class="col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 list no-side-padding">
+          <div class="item item-1 col-md-3 col-sm-4" data-name="telcel">
             <article>
               <div class="text-center">
                 <div class="icon icon-cellphone"></div>
@@ -139,7 +139,7 @@
               <p class="description">Te damos una lìnea TELCEL totalmente ilimitado y con acceso a internet</p>
             </article>
           </div>
-          <div class="item item-2 col-md-3" data-name="proyecto-pyme">
+          <div class="item item-2 col-md-3 col-sm-4" data-name="proyecto-pyme">
             <article>
               <div class="text-center">
                 <div class="icon icon-money"></div>
@@ -150,7 +150,7 @@
               <p class="description">Créditos para licitaciones, órdenes de compra, surtir pedidos y compra de equipo</p>
             </article>
           </div>
-          <div class="item item-3 col-md-3" data-name="urcorp">
+          <div class="item item-3 col-md-3 col-sm-4" data-name="urcorp">
             <article>
               <div class="text-center">
                 <div class="icon icon-web-design"></div>
@@ -161,7 +161,7 @@
               <p class="description">Todas las empresas necesitan tener presencia en la era digital, URCORP te lleva ahí</p>
             </article>
           </div>
-          <div class="item item-4 col-md-3" data-name="legalario">
+          <div class="item item-4 col-md-3 col-sm-4" data-name="legalario">
             <article>
               <div class="text-center">
                 <div class="icon icon-legal"></div>
@@ -172,11 +172,7 @@
               <p class="description">LEGALARIO te brinda apoyo con contratos, asesoría y servicios legales</p>
             </article>
           </div>
-        </div>
-      </div>
-      <div class="col-md-12 no-side-padding">
-        <div class="col-md-8 col-md-offset-2 list no-side-padding">
-          <div class="item item-5 col-md-3" data-name="contax">
+          <div class="item item-5 col-md-3 col-sm-4" data-name="contax">
             <article>
               <div class="text-center">
                 <div class="icon icon-calc"></div>
@@ -187,7 +183,7 @@
               <p class="description">Nos encargamos del área contable, fiscal y financiera</p>
             </article>
           </div>
-          <div class="item item-6 col-md-3"  data-name="aem">
+          <div class="item item-6 col-md-3 col-sm-4"  data-name="aem">
             <article>
               <div class="text-center">
                 <div class="icon icon-business"></div>
@@ -198,7 +194,7 @@
               <p class="description">Para que hagas más negocios con empresas de México y EUA</p>
             </article>
           </div>
-          <div class="item item-7 col-md-3" data-name="senor-pago">
+          <div class="item item-7 col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-2" data-name="senor-pago">
             <article>
               <div class="text-center">
                 <div class="icon icon-card-terminal"></div>
@@ -209,7 +205,7 @@
               <p class="description">Acepta pagos con tarjeta sin tener que rentar una terminal de banco</p>
             </article>
           </div>
-          <div class="item item-8 col-md-3" data-name="rocketum">
+          <div class="item item-8 col-md-3 col-sm-4" data-name="rocketum">
             <article>
               <div class="text-center">
                 <div class="icon icon-management-system"></div>
@@ -226,10 +222,10 @@
   </div>
 </section>
 <section>
-  <div class="app-packages col-md-12 no-side-padding">
+  <div class="app-packages col-xs-12 no-side-padding">
     <article>
-      <div class="description-container col-md-12 no-side-padding">
-        <div class="col-md-6 col-md-offset-3 no-side-padding">
+      <div class="description-container col-xs-12 no-side-padding">
+        <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 no-side-padding">
           <div class="header">
             <header>
               <h2 class="title">Confiable, fácil y práctico</h2>
@@ -242,8 +238,8 @@
         </div>
       </div>
     </article>
-    <div class="comparative-container col-md-12 no-side-padding">
-      <div class="col-md-8 col-md-offset-2 no-side-padding">
+    <div class="comparative-container col-xs-12 no-side-padding">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 no-side-padding">
         <table class="table table-striped">
           <thead>
             <tr>
@@ -281,7 +277,7 @@
           </tbody>
         </table>
       </div>
-      <div class="terms-container col-md-8 col-md-offset-2 no-side-padding">
+      <div class="terms-container col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 no-side-padding">
         <p>* Contrata el KIT DIGITAL por $ 775 pesos mensuales con un pago inicial de $1,500 pesos.</p>
         <p>** Contrata el KIT INTEGRAL por $ 775 pesos mensuales con un pago inicial de $2,500 pesos.</p>
       </div>
@@ -289,19 +285,19 @@
   </div>
 </section>
 <section>
-  <div class="app-faq col-md-12 no-side-padding">
-    <div class="col-md-10 col-md-offset-1 no-side-padding">
-      <div class="col-md-5 no-side-padding text-center">
+  <div class="app-faq col-xs-12 no-side-padding">
+    <div class="col-lg-10 col-lg-offset-1 col-xs-12 no-side-padding">
+      <div class="col-sm-5 no-side-padding text-center">
         <img src="{!! asset('public/assets/img/img-steve-jobs.svg') !!}" alt="Steve Jobs" title="Steve Jobs" class="img-steve-jobs" />
       </div>
-      <div class="col-md-6 no-side-padding">
-        <div class="content col-md-12 no-side-padding">
+      <div class="col-sm-6 no-side-padding">
+        <div class="content col-xs-12 no-side-padding">
           <article>
             <p class="phrase">"La única manera de triunfar es amar lo que haces. Como con todo lo que tiene que ver con el corazón, sabrás cuando lo hayas encontrado"</p>
             <p class="author">STEVE JOBS</p>
           </article>
         </div>
-        <div class="col-md-12 no-side-padding">
+        <div class="col-xs-12 no-side-padding">
           <div class="references">
             <h2 class="title">Preguntas Frecuentes</h2>
             <a href="{!! route('site.faq') !!}" class="btn-faq">FAQ'S</a>
@@ -312,8 +308,8 @@
   </div>
 </section>
 <section>
-  <div id="comienzaya" class="app-start-now col-md-12 no-side-padding">
-    <div class="col-md-6 col-md-offset-3">
+  <div id="comienzaya" class="app-start-now col-xs-12 no-side-padding">
+    <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
       <div class="header">
         <header>
           <h2 class="title">COMIENZA YA</h2>
@@ -323,7 +319,7 @@
         <p>¡Queremos saber más de tu proyecto!</p>
         <p>Escríbenos y nos pondremos en contacto lo más pronto posible para comenzar a apoyarte.</p>
       </div>
-      <div class="start-form-container col-md-12 no-side-padding">
+      <div class="start-form-container col-xs-12 no-side-padding">
         {!! Form::open(['route' => 'site.startnow.send', 'method' => 'POST', 'id' => 'startnow-form']) !!}
           {!! Form::hidden('from', 'index') !!}
           <div class="form-group">
@@ -398,7 +394,7 @@
           </div>
           <div class="form-group">
             @foreach ($kits as $kit)
-              <div class="col-md-4 no-side-padding">
+              <div class="col-sm-4 no-side-padding">
                 <label>
                   {!! Form::radio('startnow[kit]', $kit->slug, false, ['id' => 'kit-'.$kit->slug]) !!}
                   KIT {{ cstrtoupper($kit->name) }}

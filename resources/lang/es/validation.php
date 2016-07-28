@@ -121,7 +121,7 @@ return [
 
     'phone' => [
       'required'      => 'Por favor, introduzca su número de teléfono o celular.',
-      'regex'         => 'El número telefonico unicamente debe contener dígitos.'
+      'regex'         => 'El número telefónico debe contener únicamente dígitos y sin espacios.'
     ],
 
     'company' => [

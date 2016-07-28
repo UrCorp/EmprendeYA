@@ -1,5 +1,383 @@
 /* Tablets en horizonal y escritorios normales
    ------------------------------------------------------------------------- */
-@media (min-width: 992px) { 
+@media (min-width: 1024px) { 
+
+body {
+  padding-top: 57px;
+}
+
+.app-header {
+  max-height: 72px;
+}
+
+.app-header .logo-container {
+  padding: 10px 56px;
+}
+
+.app-logo {
+  width: 266.2px;
+  height: 42px;
+}
+
+.app-navbar ul li a {
+  font-size: 14px;
+  padding: 27px 25px 25px 25px;
+}
+
+/* [INDEX PAGE]
+   ========================================================================= */
+
+.app-jumbotron .header {
+  top: 140px;
+  left: 62px;
+  z-index: 5;
+}
+
+.app-jumbotron .header .title {
+  font-size: 56px;
+  margin-left: 60px;
+}
+
+.app-jumbotron .header .title b {
+  font-size: 68px;
+}
+
+#main-carousel {
+  width: 100%;
+  height: 430px;
+}
+
+#main-carousel .carousel-inner > .item > img, 
+#main-carousel .carousel-inner > .item > a > img {
+  width: 100%;
+  height: 430px;
+}
+
+.app-quotes .header {
+  top: 100px;
+  left: 200px;
+}
+
+.app-quotes .header .title {
+  font-size: 40px;
+}
+
+.app-quotes .header .title .icon {
+  width: 64px;
+  height: 64px;
+  margin-right: 20px;
+}
+
+#quotes-carousel {
+  height: 420px;
+}
+
+#quotes-carousel .carousel-inner > .item {
+  width: 100%;
+  height: 420px;
+}
+
+#quotes-carousel .carousel-inner > .item > .carousel-caption {
+  top: 190px;
+  left: 240px !important;
+  right: 240px !important;
+  font-size: 20px;
+}
+
+#quotes-carousel .carousel-inner > .item > .carousel-caption > .content {
+  line-height: 25px;
+}
+
+#quotes-carousel .carousel-inner > .item > .carousel-caption > .person-name {
+  font-weight: 700;
+  margin-top: 15px;
+  margin-left: 60px;
+}
+
+.app-kit {
+  padding: 50px 30px 40px 30px;
+}
+
+.app-kit .img-kit {
+  margin-top: 30px;
+  width: 100%;
+  height: 320px;
+}
+
+.app-kit .header {
+  margin-bottom: 30px;
+}
+
+.app-kit .header .title {
+  margin-left: 90px;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.app-kit .header .title b {
+  font-size: 78px;
+  position: static;
+  margin-top: 0;
+}
+
+.app-kit .content p {
+  margin-left: 90px;
+  line-height: 34px;
+  font-size: 24px;
+}
+
+.app-kit .content p .icon {
+  left: 0;
+  margin-top: 10px;
+  width: 64px;
+  height: 64px;
+}
+
+.app-services {
+  padding: 48px 0;
+}
+
+.app-services .header .img-logo {
+  width: 432px;
+  height: 70px;
+  margin-bottom: 45px;
+}
+
+.app-services .header .explanation {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.app-services .list .item {
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-height: 270px;
+}
+
+.app-services .list .item .title,
+.app-services .list .item .description {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.app-services .list .item .description {
+  font-size: 14px;
+}
+
+.app-services .list .item .icon {
+  width: 100%;
+  height: 72px;
+}
+
+.app-services .list .item .icon-cellphone {
+  background-size: 47.2px 68px;
+}
+
+.app-services .list .item .icon-money {
+  background-size: 61.6px 60.8px;
+}
+
+.app-services .list .item .icon-web-design {
+  background-size: 70.4px 56.8px;
+}
+
+.app-services .list .item .icon-legal {
+  background-size: 57.6px 67.2px;
+}
+
+.app-services .list .item .icon-calc {
+  background-size: 47.2px 47.2px;
+}
+
+.app-services .list .item .icon-business {
+  background-size: 70.4px 44px;
+}
+
+.app-services .list .item .icon-card-terminal {
+  background-size: 57.6px 60px;
+}
+
+.app-services .list .item .icon-management-system {
+  background-size: 62.4px 46.4px;
+}
+
+.app-packages .description-container {
+  padding: 45px 0;
+}
+
+.app-packages .description-container .header .title {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.app-packages .description-container .content {
+  font-size: 22px;
+}
+
+.app-packages .description-container .content .icon {
+  left: -90px;
+  margin-top: 15px;
+  width: 64px;
+  height: 64px;
+}
+
+.app-packages .comparative-container {
+  padding: 30px 0 60px 0;
+}
+
+.app-packages .comparative-container .explanation {
+  font-size: 22px;
+  padding-top: 30px;
+}
+
+.app-packages .comparative-container .name {
+  font-size: 28px;
+}
+
+.app-packages .comparative-container .price {
+  font-size: 28px;
+}
+
+.app-packages .comparative-container .price sup {
+  font-size: 16px;
+  margin-left: 10px;
+  top: -8px;
+}
+
+.app-packages .comparative-container .price small {
+  font-size: 14px;
+  margin-top: 26px;
+  margin-left: -60px;
+}
+
+.app-packages .comparative-container .btn-container {
+  padding: 0 20px;
+}
+
+.app-packages .comparative-container .btn-container .btn-chose {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  padding: 8px 16px;
+  width: 100%;
+}
+
+.app-packages .comparative-container table tbody tr td {
+  font-size: 16px;
+}
+
+.app-packages .comparative-container .check-container {
+  font-size: 32px;
+}
+
+.app-packages .comparative-container .terms-container p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+
+.app-faq {
+  padding: 40px 0 0 0;
+}
+
+.app-faq .img-steve-jobs {
+  width: 330px;
+  height: 285px;
+}
+
+.app-faq .content .phrase {
+  margin-top: 30px;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.app-faq .content .author {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.app-faq .references {
+  margin-top: 10px;
+}
+
+.app-faq .references .title,
+.app-faq .references .btn-faq {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.app-faq .references .btn-faq {
+  padding: 12px 54px;
+  margin-left: 24px;
+}
+
+.app-start-now {
+  padding: 30px 0 60px 0;
+}
+
+.app-start-now .header .title {
+  font-size: 56px;
+  line-height: 64px;
+  margin-bottom: 15px;
+}
+
+.app-start-now .content p {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.app-start-now .start-form-container .form-group label {
+  font-size: 18px;
+  margin-left: 35px;
+  bottom: -15px !important;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.app-start-now .start-form-container .form-group label input[type="radio"] {
+  width: 30px;
+  height: 30px;
+  margin-top: -4px;
+  margin-right: 10px;
+}
+
+.app-start-now .start-form-container .form-group input,
+.app-start-now .start-form-container .form-group textarea {
+  font-size: 16px;
+}
+
+.app-start-now .start-form-container .form-group {
+  margin-bottom: 2px;
+}
+
+.app-start-now .start-form-container .form-group .btn-send {
+  width: 100%;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 12px 15px;
+  margin-top: 40px;
+}
+
+.app-start-now .start-form-container .help-block strong {
+  font-size: 18px;
+  margin-left: 35px;
+  bottom: -5px !important;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.app-footer {
+  padding: 30px 45px;
+}
+
+.app-footer .main-links a {
+  margin-top: 5px;
+}
+
+.app-footer .logo-globe {
+  width: 32px;
+  height: 32px;
+}
 
 }

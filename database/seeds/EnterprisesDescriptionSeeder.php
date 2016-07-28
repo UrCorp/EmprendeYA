@@ -65,7 +65,7 @@ class EnterprisesDescriptionSeeder extends Seeder
       'logo_path'             => 'public/files/admin/img/enterprises_description/',
       'logo_file_name'        => 'contax.png',
       'name'                  => 'CONTAX',
-      'description'           => '<ul><li>Asesoría y servicios de recursos humanos, contable y fiscal</li><li>Manejo, asesoría y estrategias contables que permitan el cumplimiento de las obligaciones fiscales. Así como la elaboración de estados financieros, estados de resultado y asesoría financiera, así como el control para un equilibrio fiscal y financiero en el pago de impuestos.</li><li>12 registros contables, estos pueden estar conformados por facturas a favor o emitidas.</li><li>La relación es por medio de un call center para soporte contable y asesoría fiscal básica, así como una plataforma digital para intercambio de información (PDF y XML básicamente).</li></ul>',
+      'description'           => '<ul><li>12 registros contables, estos pueden estar conformados por facturas a favor o emitidas.</li><li>Asesoría y servicios de recursos humanos, contable y fiscal</li><li>Manejo, asesoría y estrategias contables que permitan el cumplimiento de las obligaciones fiscales. Así como la elaboración de estados financieros, estados de resultado y asesoría financiera, así como el control para un equilibrio fiscal y financiero en el pago de impuestos.</li><li>La relación es por medio de un call center para soporte contable y asesoría fiscal básica, así como una plataforma digital para intercambio de información (PDF y XML básicamente).</li></ul>',
       'description_path'      => 'public/files/admin/documents/enterprises_description/',
       'description_file_name' => 'contax.pdf',
       'created_at'            => $tmp_date,

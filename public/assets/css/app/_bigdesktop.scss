@@ -1,5 +1,552 @@
  /* Escritorios muy anchos
    ------------------------------------------------------------------------- */
-@media (min-width: 1200px) { 
+@media (min-width: 1280px) { 
+
+body {
+  padding-top: 65px;
+}
+
+.app-header {
+  max-height: 80px;
+}
+
+.app-header .logo-container {
+  padding: 10px 56px;
+}
+
+.app-logo {
+  width: 266.2px;
+  height: 48px;
+}
+
+.app-navbar ul li a {
+  font-size: 16px;
+  padding: 27px 25px 25px 25px;
+  text-decoration: none;
+}
+
+/* [INDEX PAGE]
+   ========================================================================= */
+
+.app-jumbotron .header {
+  top: 180px;
+  left: 105px;
+}
+
+.app-jumbotron .header .title {
+  font-size: 60px;
+}
+
+.app-jumbotron .header .title b {
+  font-size: 76px;
+}
+
+#main-carousel {
+  height: 500px;
+}
+
+#main-carousel .carousel-inner > .item > img, 
+#main-carousel .carousel-inner > .item > a > img {
+  height: 500px;
+}
+
+.app-quotes .header {
+  top: 140px;
+  left: 300px;
+}
+
+.app-quotes .header .title {
+  font-size: 40px;
+}
+
+.app-quotes .header .title .icon {
+  width: 64px;
+  height: 64px;
+}
+
+#quotes-carousel {
+  height: 480px;
+}
+
+#quotes-carousel .carousel-inner > .item {
+  height: 540px;
+}
+
+#quotes-carousel .carousel-inner > .item > .carousel-caption {
+  top: 230px;
+  left: 328px !important;
+  right: 328px !important;
+  font-size: 20px;
+}
+
+#quotes-carousel .carousel-inner > .item > .carousel-caption > .content {
+  line-height: 25px;
+}
+
+#quotes-carousel .carousel-inner > .item > .carousel-caption > .person-name {
+  margin-top: 15px;
+  margin-left: 60px;
+}
+
+.app-kit {
+  padding: 50px 30px 40px 30px;
+}
+
+.app-kit .img-kit {
+  margin-top: 30px;
+  width: 100%;
+  height: 320px;
+  background-image: url("../img/kit.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.app-kit .header {
+  margin-bottom: 30px;
+}
+
+.app-kit .header .title {
+  margin-left: 30px;
+  font-size: 60px;
+  line-height: 56px;
+}
+
+.app-kit .header .title b {
+  font-size: 90px;
+}
+
+.app-kit .content p {
+  margin-left: 30px;
+  line-height: 34px;
+  font-size: 28px;
+}
+
+.app-kit .content p .icon {
+  left: -6%;
+  margin-top: 10px;
+  width: 64px;
+  height: 64px;
+}
+
+.app-services {
+  padding: 64px 25px;
+}
+
+.app-services .header .img-logo {
+  margin-bottom: 45px;
+}
+
+.app-services .header .explanation {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.app-services .list .item {
+  margin-top: 55px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-height: 290px;
+}
+
+.app-services .list .item .title,
+.app-services .list .item .description {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.app-services .list .item .description {
+  font-size: 16px;
+}
+
+.app-services .list .item .icon {
+  width: 100%;
+  height: 89px;
+}
+
+.app-services .list .item .icon-cellphone {
+  background-size: 59px 85px;
+}
+
+.app-services .list .item .icon-money {
+  background-size: 77px 76px;
+}
+
+.app-services .list .item .icon-web-design {
+  background-size: 88px 71px;
+}
+
+.app-services .list .item .icon-legal {
+  background-size: 72px 84px;
+}
+
+.app-services .list .item .icon-calc {
+  background-size: 59px 59px;
+}
+
+.app-services .list .item .icon-business {
+  background-size: 88px 55px;
+}
+
+.app-services .list .item .icon-card-terminal {
+  background-size: 72px 75px;
+}
+
+.app-services .list .item .icon-management-system {
+  background-size: 78px 58px;
+}
+
+.app-packages .description-container {
+  padding: 50px 0;
+}
+
+.app-packages .description-container .header .title {
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.app-packages .description-container .content {
+  font-size: 26px;
+}
+
+.app-packages .description-container .content .icon {
+  left: -90px;
+  margin-top: 15px;
+  width: 64px;
+  height: 64px;
+}
+
+.app-packages .comparative-container {
+  padding: 30px 0 60px 0;
+}
+
+.app-packages .comparative-container .explanation {
+  font-size: 24px;
+  padding-top: 30px;
+}
+
+.app-packages .comparative-container .name {
+  font-size: 32px;
+}
+
+.app-packages .comparative-container .price {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.app-packages .comparative-container .price sup {
+  font-size: 20px;
+  margin-left: 10px;
+  top: -15px;
+}
+
+.app-packages .comparative-container .price small {
+  font-size: 16px;
+  margin-top: 30px;
+  margin-left: -70px;
+}
+
+.app-packages .comparative-container .btn-container {
+  padding: 0 20px;
+}
+
+.app-packages .comparative-container .btn-container .btn-chose {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  padding: 8px 16px;
+  width: 100%;
+}
+
+.app-packages .comparative-container table tbody tr td {
+  vertical-align: middle;
+}
+
+.app-packages .comparative-container .check-container {
+  font-size: 32px;
+}
+
+.app-packages .comparative-container .terms-container p {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+
+.app-faq {
+  padding: 60px 0 0 0;
+}
+
+.app-faq .img-steve-jobs {
+  width: 330px;
+  height: 285px;
+}
+
+.app-faq .content .phrase {
+  margin-top: 30px;
+  font-size: 27px;
+  line-height: 32px;
+}
+
+.app-faq .content .author {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.app-faq .references {
+  margin-top: 10px;
+}
+
+.app-faq .references .title,
+.app-faq .references .btn-faq {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.app-faq .references .btn-faq {
+  padding: 12px 54px;
+  margin-left: 24px;
+}
+
+.app-start-now {
+  padding: 60px 0;
+}
+
+.app-start-now .header .title {
+  font-size: 62px;
+  line-height: 70px;
+  margin-bottom: 25px;
+}
+
+.app-start-now .content p {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.app-start-now .start-form-container .form-group label {
+  font-size: 18px;
+  margin-left: 35px;
+  bottom: -15px !important;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.app-start-now .start-form-container .form-group label input[type="radio"] {
+  width: 30px;
+  height: 30px;
+  margin-top: -4px;
+  margin-right: 10px;
+}
+
+.app-start-now .start-form-container .form-group label.error {
+  color: red;
+}
+
+.app-start-now .start-form-container .form-group input,
+.app-start-now .start-form-container .form-group textarea {
+  font-size: 16px;
+}
+
+.app-start-now .start-form-container .form-group {
+  margin-bottom: 2px;
+}
+
+.app-start-now .start-form-container .form-group .btn-send {
+  width: 100%;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 12px 15px;
+  margin-top: 40px;
+}
+
+.app-start-now .start-form-container .help-block strong {
+  font-size: 18px;
+  margin-left: 35px;
+  bottom: -5px !important;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.app-enterprise-description .logo {
+  display: block;
+  margin: auto;
+  width: 180px;
+  height: 220px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.app-enterprise-description .name {
+  font-size: 32px;
+  line-height: 34px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.app-enterprise-description .description {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.app-footer {
+  padding: 30px 45px;
+}
+
+.app-footer .main-links a {
+  margin-top: 5px;
+}
+
+.app-footer .logo-globe {
+  width: 32px;
+  height: 32px;
+}
+
+/* [FAQ PAGE]
+   ========================================================================= */
+
+.app-faq-1 {
+  padding: 75px 0;
+}
+
+.app-faq-1 .header {
+  margin-bottom: 60px;
+}
+
+.app-faq-1 .header .title {
+  font-size: 72px;
+  line-height: 84px;
+  color: #5E5E5E;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.app-faq-1 .header .explanation a {
+  color: #da214d;
+}
+
+.app-faq-1 .header .explanation {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.app-faq-1 .faq-nav li {
+  text-align: center;
+}
+
+.app-faq-1 .faq-nav li a {
+  color: #c02a4e;
+  border-radius: 0;
+}
+
+.app-faq-1 .faq-nav li a:hover {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  background-color: #da214d;
+  color: #FFFFFF;
+}
+
+.app-faq-1 .faq-nav li.active > a {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  background-color: inherit;
+  color: #c02a4e;
+  border: 1px solid #c02a4e;
+}
+
+.app-faq-1 .tab-content .tab-pane article .title {
+  font-weight: 700;
+  margin: 5px 5px 30px 5px;
+}
+
+.app-faq-1 .tab-content .tab-pane article h3 { 
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.app-faq-1 .tab-content .tab-pane article p {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.app-faq-1 .tab-content .tab-pane article ul {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.app-faq-1 .tab-content .tab-pane article ul li {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.app-clients {
+  padding: 40px 0 60px 0;
+}
+
+.app-clients .header .title {
+  font-size: 60px;
+  line-height: 72px;
+  color: #5E5E5E;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.app-clients .clients-container .client .header .title {
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.app-clients .clients-container .client p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.app-clients .clients-container .client .more-info {
+  margin-top: 10px;
+  cursor: pointer;
+  color: #000000;
+  padding: 4px 8px;
+  border-bottom: 1px solid #000000;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.app-clients .clients-container .client .more-info:hover {
+  color: #333333;
+  border-bottom: 1px solid #555555;
+}
+
+.app-clients .aside .title {
+  padding: 4px 2px;
+  font-size: 28px;
+  font-weight: 34px;
+  line-height: 34px;
+  border-bottom: 1px solid #FF00FF;
+}
+
+.app-clients .aside ul {
+  margin-top: 15px;
+  padding: 0;
+  list-style: none;
+}
+
+.app-clients .aside ul li {
+  margin-bottom: 10px;
+}
+
+.app-clients .aside ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  line-height: 22px;
+}
 
 }

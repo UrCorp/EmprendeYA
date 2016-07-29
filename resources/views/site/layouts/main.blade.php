@@ -60,18 +60,18 @@
     @yield('content')
     <footer>
       <div class="app-footer col-xs-12">
-        <div class="main-links col-lg-6 col-md-8 col-sm-10">
-          <div class="col-sm-4 no-side-padding text-center">
+        <div class="main-links col-lg-6 col-md-8 col-sm-10 col-xs-12">
+          <div class="col-sm-4 col-xs-12 no-side-padding text-center">
             <a href="#">ACERCA DE</a>
           </div>
-          <div class="col-sm-4 no-side-padding text-center">
+          <div class="col-sm-4 col-xs-12 no-side-padding text-center">
             <a href="#">AVISO DE PRIVACIDAD</a>
           </div>
-          <div class="col-sm-4 no-side-padding text-center">
+          <div class="col-sm-4 col-xs-12 no-side-padding text-center">
             <a href="#">POLITICA DE COOKIES</a>
           </div>
         </div>
-        <div class="col-lg-2 col-lg-offset-4 col-md-2 col-md-offset-2 col-sm-2 text-center">
+        <div class="col-lg-2 col-lg-offset-4 col-md-2 col-md-offset-2 col-sm-2 col-xs-12 text-center">
           <img src="{!! asset('public/assets/img/logo-3.svg') !!}" alt="Globo de EmprendeYA" title="EmprendeYA" class="logo-globe">
         </div>
       </div>

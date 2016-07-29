@@ -7,7 +7,6 @@ body {
 }
 
 .app-header {
-  position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
@@ -46,24 +45,13 @@ body {
   font-size: 14px;
   display: block;
   padding: 24px 15px 20px 15px;
-  color: #FFFFFF;
   text-decoration: none;
-}
-
-.app-navbar ul li a:hover {
-  -webkit-transition: all .2s;
-  -moz-transition: all .2s;
-  -ms-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s;
-  background-color: rgba(225, 225, 225, 0.15);
 }
 
 /* [INDEX PAGE]
    ========================================================================= */
 
 .app-jumbotron .header {
-  position: absolute;
   top: 120px;
   left: 32px;
   z-index: 5;
@@ -71,8 +59,6 @@ body {
 
 .app-jumbotron .header .title {
   font-size: 48px;
-  font-weight: 300;
-  color: #181f6a;
   margin-left: 60px;
 }
 
@@ -93,7 +79,6 @@ body {
 }
 
 .app-quotes .header {
-  position: absolute;
   top: 45px;
   left: 145px;
   z-index: 5;
@@ -101,8 +86,6 @@ body {
 
 .app-quotes .header .title {
   font-size: 32px;
-  font-weight: 700;
-  color: #FFFFFF;
 }
 
 .app-quotes .header .title .icon {
@@ -112,7 +95,6 @@ body {
 }
 
 #quotes-carousel {
-  background-color: #1a2065;
   height: 320px;
 }
 
@@ -147,10 +129,6 @@ body {
   margin-top: 30px;
   width: 100%;
   height: 320px;
-  background-image: url("../img/kit.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .app-kit .header {
@@ -162,12 +140,10 @@ body {
   font-size: 32px;
   font-weight: 700;
   line-height: 56px;
-  color: #7F7F7F;
 }
 
 .app-kit .header .title b {
   font-size: 56px;
-  position: absolute;
   margin-top: 5px;
 }
 
@@ -179,7 +155,6 @@ body {
 }
 
 .app-kit .content p .icon {
-  position: absolute;
   left: 0;
   margin-top: 10px;
   width: 64px;
@@ -188,7 +163,6 @@ body {
 
 .app-services {
   padding: 48px 0;
-  background-color: #F2F2F2;
 }
 
 .app-services .header .img-logo {
@@ -203,57 +177,10 @@ body {
 }
 
 .app-services .list .item {
-  -webkit-transition: all .2s;
-  -moz-transition: all .2s;
-  -ms-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s;
-  cursor: pointer;
   margin-top: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
   min-height: 270px;
-}
-
-.app-services .list .item:hover {
-  -webkit-transition: all .2s;
-  -moz-transition: all .2s;
-  -ms-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s;
-  background-color: #D2D2D2;
-}
-
-.app-services .list .item-1:hover {
-  background-color: #72E2FC;
-}
-
-.app-services .list .item-2:hover {
-  background-color: #85FC75;
-}
-
-.app-services .list .item-3:hover {
-  background-color: #8181E2;
-}
-
-.app-services .list .item-4:hover {
-  background-color: #FCCA7A;
-}
-
-.app-services .list .item-5:hover {
-  background-color: #FF5BCD;
-}
-
-.app-services .list .item-6:hover {
-  background-color: #FC817E;
-}
-
-.app-services .list .item-7:hover {
-  background-color: #7FD6A2;
-}
-
-.app-services .list .item-8:hover {
-  background-color: #CD82F4;
 }
 
 .app-services .list .item .title,
@@ -274,61 +201,46 @@ body {
 .app-services .list .item .icon {
   width: 100%;
   height: 72px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
 }
 
 .app-services .list .item .icon-cellphone {
-  background-image: url("../img/icon-services-cellphone.svg");
   background-size: 47.2px 68px;
 }
 
 .app-services .list .item .icon-money {
-  background-image: url("../img/icon-services-money.svg");
   background-size: 61.6px 60.8px;
 }
 
 .app-services .list .item .icon-web-design {
-  background-image: url("../img/icon-services-web-design.svg");
   background-size: 70.4px 56.8px;
 }
 
 .app-services .list .item .icon-legal {
-  background-image: url("../img/icon-services-legal.svg");
   background-size: 57.6px 67.2px;
 }
 
 .app-services .list .item .icon-calc {
-  background-image: url("../img/icon-services-calc.svg");
   background-size: 47.2px 47.2px;
 }
 
 .app-services .list .item .icon-business {
-  background-image: url("../img/icon-services-business.svg");
   background-size: 70.4px 44px;
 }
 
 .app-services .list .item .icon-card-terminal {
-  background-image: url("../img/icon-services-card-terminal.svg");
   background-size: 57.6px 60px;
 }
 
 .app-services .list .item .icon-management-system {
-  background-image: url("../img/icon-services-management-system.svg");
   background-size: 62.4px 46.4px;
 }
 
 .app-packages .description-container {
-  background-color: #797979;
-  color: #FFFFFF;
   padding: 45px 0;
 }
 
 .app-packages .description-container .header .title {
   font-size: 28px;
-  font-weight: 400;
   margin-bottom: 20px;
 }
 
@@ -339,20 +251,15 @@ body {
 }
 
 .app-packages .description-container .content .icon {
-  position: absolute;
   left: -90px;
   margin-top: 15px;
-  background-image: url("../img/icon-quotation-marks-2.svg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
   width: 64px;
   height: 64px;
 }
 
 .app-packages .comparative-container {
-  color: #000000;
   padding: 30px 0 60px 0;
+  overflow: initial;
 }
 
 .app-packages .comparative-container .explanation {
@@ -363,7 +270,6 @@ body {
 }
 
 .app-packages .comparative-container .name {
-  color: #797979;
   font-size: 28px;
   text-align: center;
 }
@@ -382,7 +288,6 @@ body {
 
 .app-packages .comparative-container .price small {
   font-size: 14px;
-  position: absolute;
   margin-top: 26px;
   margin-left: -60px;
 }
@@ -392,11 +297,6 @@ body {
 }
 
 .app-packages .comparative-container .btn-container .btn-chose {
-  -webkit-transition: all .2s;
-  -moz-transition: all .2s;
-  -ms-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s;
   margin-top: 15px;
   margin-bottom: 5px;
   display: inline-block;
@@ -404,42 +304,12 @@ body {
   padding: 8px 16px;
   width: 100%;
   border: none;
-  background-color: #797979;
-  color: #FFFFFF;
   text-decoration: none;
   font-weight: normal;
 }
 
-.app-packages .comparative-container .btn-container .btn-chose:hover {
-  -webkit-transition: all .2s;
-  -moz-transition: all .2s;
-  -ms-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s;
-}
-
-.app-packages .comparative-container .btn-container .btn-chose.inicial {
-  background-color: #FFCC33;
-}
-
-.app-packages .comparative-container .btn-container .btn-chose.inicial:hover {
-  background-color: #FFD751;
-}
-
-.app-packages .comparative-container .btn-container .btn-chose.digital {
-  background-color: #FF3366;
-}
-
-.app-packages .comparative-container .btn-container .btn-chose.digital:hover {
-  background-color: #FF5781;
-}
-
-.app-packages .comparative-container .btn-container .btn-chose.integral {
-  background-color: #140328;
-}
-
-.app-packages .comparative-container .btn-container .btn-chose.integral:hover {
-  background-color: #250d40;
+.app-packages .comparative-container table {
+  width: 100%;
 }
 
 .app-packages .comparative-container table tbody tr td {
@@ -449,7 +319,6 @@ body {
 
 .app-packages .comparative-container .check-container {
   text-align: center;
-  color: #67da67;
   font-size: 32px;
 }
 
@@ -461,8 +330,6 @@ body {
 }
 
 .app-faq {
-  background-color: #FF004F;
-  color: #FFFFFF;
   padding: 40px 0 0 0;
 }
 
@@ -498,25 +365,9 @@ body {
 }
 
 .app-faq .references .btn-faq {
-  -webkit-transition: all .2s;
-  -moz-transition: all .2s;
-  -ms-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s;
-  border: 3px solid #FF00FF;
   padding: 8px 48px;
-  color: #FFFFFF;
   text-decoration: none;
   margin-left: 24px;
-}
-
-.app-faq .references .btn-faq:hover {
-  -webkit-transition: all .2s;
-  -moz-transition: all .2s;
-  -ms-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s;
-  background-color: #FF2468;
 }
 
 .app-start-now {
@@ -527,7 +378,6 @@ body {
   font-size: 48px;
   line-height: 64px;
   font-weight: 700;
-  color: #5E5E5E;
   margin-bottom: 15px;
 }
 
@@ -537,13 +387,9 @@ body {
 }
 
 .app-start-now .start-form-container .form-group label {
-  cursor: pointer;
-  background-color: #FFFFFF;
-  color: #8E8E8E;
   font-size: 18px;
   font-weight: normal;
-  position: relative;
-  margin-left: 35px;
+  margin-left: 25px;
   bottom: -15px !important;
   padding-left: 7px;
   padding-right: 7px;
@@ -557,14 +403,8 @@ body {
   margin-right: 10px;
 }
 
-.app-start-now .start-form-container .form-group label.error {
-  color: red;
-}
-
 .app-start-now .start-form-container .form-group input,
 .app-start-now .start-form-container .form-group textarea {
-  border: 2px solid #8E8E8E;
-  box-shadow: none;
   font-size: 16px;
 }
 
@@ -573,13 +413,6 @@ body {
 }
 
 .app-start-now .start-form-container .form-group .btn-send {
-  -webkit-transition: all .2s;
-  -moz-transition: all .2s;
-  -ms-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s;
-  background-color: #339900;
-  color: #FFFFFF;
   border: 0;
   width: 100%;
   display: inline-block;
@@ -590,19 +423,7 @@ body {
   margin-top: 40px;
 }
 
-.app-start-now .start-form-container .form-group .btn-send:hover {
-  -webkit-transition: all .2s;
-  -moz-transition: all .2s;
-  -ms-transition: all .2s;
-  -o-transition: all .2s;
-  transition: all .2s;
-  background-color: #40C100;
-}
-
 .app-start-now .start-form-container .help-block strong {
-  cursor: pointer;
-  background-color: #FFFFFF;
-  color: red;
   font-size: 18px;
   font-weight: normal !important;
   position: relative;
@@ -613,17 +434,16 @@ body {
 }
 
 .app-footer {
-  background-color: #000000;
   padding: 30px 45px;
 }
 
 .app-footer .main-links a {
   margin-top: 5px;
   display: block;
-  color: #FFFFFF;
 }
 
 .app-footer .logo-globe {
+  margin-top: 0;
   width: 32px;
   height: 32px;
 }

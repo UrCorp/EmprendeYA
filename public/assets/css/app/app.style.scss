@@ -79,42 +79,42 @@ body {
 .app-jumbotron .header {
   position: absolute;
   top: 120px;
-  left: 32px;
+  left: 2px;
   z-index: 5;
 }
 
 .app-jumbotron .header .title {
-  font-size: 32px;
+  font-size: 22px;
   font-weight: 300;
   color: #181f6a;
   margin-left: 20px;
 }
 
 .app-jumbotron .header .title b {
-  font-size: 48px;
+  font-size: 32px;
   font-weight: 700;
 }
 
 #main-carousel {
   width: 100%;
-  height: 320px;
+  height: 260px;
 }
 
 #main-carousel .carousel-inner > .item > img, 
 #main-carousel .carousel-inner > .item > a > img {
   width: 100%;
-  height: 320px;
+  height: 260px;
 }
 
 .app-quotes .header {
   position: absolute;
-  top: 45px;
-  left: 60px;
+  top: 30px;
+  left: 20px;
   z-index: 5;
 }
 
 .app-quotes .header .title {
-  font-size: 32px;
+  font-size: 26px;
   font-weight: 700;
   color: #FFFFFF;
 }
@@ -127,30 +127,30 @@ body {
 
 #quotes-carousel {
   background-color: #1a2065;
-  height: 310px;
+  height: 316px;
 }
 
 #quotes-carousel .carousel-inner > .item {
   width: 100%;
-  height: 310px;
+  height: 316px;
 }
 
 #quotes-carousel .carousel-inner > .item > .carousel-caption {
-  top: 110px;
-  left: 90px !important;
-  right: 90px !important;
+  top: 80px;
+  left: 40px !important;
+  right: 30px !important;
   text-align: left;
   font-size: 16px;
 }
 
-#quotes-carousel .carousel-inner > .item > .carousel-caption > .content {
+#quotes-carousel .carousel-inner .item .carousel-caption .content {
   line-height: 25px;
 }
 
-#quotes-carousel .carousel-inner > .item > .carousel-caption > .person-name {
+#quotes-carousel .carousel-inner .item .carousel-caption .person-name {
   font-weight: 700;
   margin-top: 15px;
-  margin-left: 60px;
+  font-style: italic;
 }
 
 .app-kit {
@@ -158,9 +158,8 @@ body {
 }
 
 .app-kit .img-kit {
-  margin-top: 20px;
   width: 60%;
-  height: 240px;
+  height: 200px;
   background-image: url("../img/kit.png");
   background-position: center center;
   background-repeat: no-repeat;
@@ -172,22 +171,23 @@ body {
 }
 
 .app-kit .header .title {
-  margin-left: 60px;
-  font-size: 32px;
+  margin-left: 10px;
+  margin-top: 0;
+  font-size: 28px;
   font-weight: 700;
   line-height: 56px;
   color: #7F7F7F;
 }
 
 .app-kit .header .title b {
-  font-size: 56px;
+  font-size: 42px;
   position: absolute;
-  margin-top: 5px;
+  margin-top: 15px;
 }
 
 .app-kit .content p {
-  margin-left: 60px;
-  line-height: 34px;
+  margin-left: 10px;
+  line-height: 28px;
   font-size: 20px;
   font-weight: 700;
 }
@@ -206,14 +206,18 @@ body {
 }
 
 .app-services .header .img-logo {
-  width: 345px;
-  height: 56px;
+  width: 220px;
+  height: 36px;
   margin-bottom: 30px;
 }
 
 .app-services .header .explanation {
   font-size: 16px;
   line-height: 20px;
+}
+
+.app-services .list .item:first-child {
+  margin-top: 20px;
 }
 
 .app-services .list .item {
@@ -223,10 +227,8 @@ body {
   -o-transition: all .2s;
   transition: all .2s;
   cursor: pointer;
-  margin-top: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  min-height: 270px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .app-services .list .item:hover {
@@ -287,7 +289,7 @@ body {
 
 .app-services .list .item .icon {
   width: 100%;
-  height: 72px;
+  height: 56px;
   background-position: center center;
   background-repeat: no-repeat;
   background-position: center;
@@ -296,52 +298,52 @@ body {
 
 .app-services .list .item .icon-cellphone {
   background-image: url("../img/icon-services-cellphone.svg");
-  background-size: 47.2px 68px;
+  background-size: 37.76px 54.4px;
 }
 
 .app-services .list .item .icon-money {
   background-image: url("../img/icon-services-money.svg");
-  background-size: 61.6px 60.8px;
+  background-size: 49.28px 48.64px;
 }
 
 .app-services .list .item .icon-web-design {
   background-image: url("../img/icon-services-web-design.svg");
-  background-size: 70.4px 56.8px;
+  background-size: 56.32px 45.44px;
 }
 
 .app-services .list .item .icon-legal {
   background-image: url("../img/icon-services-legal.svg");
-  background-size: 57.6px 67.2px;
+  background-size: 46.08px 53.76px;
 }
 
 .app-services .list .item .icon-calc {
   background-image: url("../img/icon-services-calc.svg");
-  background-size: 47.2px 47.2px;
+  background-size: 37.76px 37.72px;
 }
 
 .app-services .list .item .icon-business {
   background-image: url("../img/icon-services-business.svg");
-  background-size: 70.4px 44px;
+  background-size: 56.32px 35.2px;
 }
 
 .app-services .list .item .icon-card-terminal {
   background-image: url("../img/icon-services-card-terminal.svg");
-  background-size: 57.6px 60px;
+  background-size: 46.08px 48px;
 }
 
 .app-services .list .item .icon-management-system {
   background-image: url("../img/icon-services-management-system.svg");
-  background-size: 62.4px 46.4px;
+  background-size: 49.92px 37.12px;
 }
 
 .app-packages .description-container {
   background-color: #797979;
   color: #FFFFFF;
-  padding: 45px 0;
+  padding: 25px 0;
 }
 
 .app-packages .description-container .header .title {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 400;
   margin-bottom: 20px;
 }
@@ -492,8 +494,8 @@ body {
 .app-packages .comparative-container .terms-container p {
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 5px;
-  margin-left: 25px;
+  margin-top: 15px;
+  margin-left: 10px;
 }
 
 .app-faq {
@@ -522,7 +524,7 @@ body {
 }
 
 .app-faq .references {
-  float: right;
+  text-align: center;
   margin-top: 2px;
   margin-bottom: 20px;
 }
@@ -544,7 +546,6 @@ body {
   padding: 8px 48px;
   color: #FFFFFF;
   text-decoration: none;
-  margin-left: 24px;
 }
 
 .app-faq .references .btn-faq:hover {
@@ -561,16 +562,15 @@ body {
 }
 
 .app-start-now .header .title {
-  font-size: 48px;
+  font-size: 32px;
   line-height: 64px;
   font-weight: 700;
   color: #5E5E5E;
-  margin-bottom: 15px;
 }
 
 .app-start-now .content p {
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .app-start-now .start-form-container .form-group label {
@@ -649,7 +649,7 @@ body {
 
 .app-footer {
   background-color: #000000;
-  padding: 30px 45px;
+  padding: 15px;
 }
 
 .app-footer .main-links a {

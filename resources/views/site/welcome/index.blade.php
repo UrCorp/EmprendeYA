@@ -128,7 +128,7 @@
       </header>
       <div class="col-xs-12 no-side-padding">
         <div class="col-lg-8 col-lg-offset-2 col-sm-10 col-sm-offset-1 list no-side-padding">
-          <div class="item item-1 col-md-3 col-sm-4 col-xs-6" data-name="telcel">
+          <div class="item item-1 col-md-3 col-sm-4 col-xs-12" data-name="telcel">
             <article>
               <div class="text-center">
                 <div class="icon icon-cellphone"></div>
@@ -139,7 +139,7 @@
               <p class="description">Te damos una lìnea TELCEL totalmente ilimitado y con acceso a internet</p>
             </article>
           </div>
-          <div class="item item-2 col-md-3 col-sm-4 col-xs-6" data-name="proyecto-pyme">
+          <div class="item item-2 col-md-3 col-sm-4 col-xs-12" data-name="proyecto-pyme">
             <article>
               <div class="text-center">
                 <div class="icon icon-money"></div>
@@ -150,7 +150,7 @@
               <p class="description">Créditos para licitaciones, órdenes de compra, surtir pedidos y compra de equipo</p>
             </article>
           </div>
-          <div class="item item-3 col-md-3 col-sm-4 col-xs-6" data-name="urcorp">
+          <div class="item item-3 col-md-3 col-sm-4 col-xs-12" data-name="urcorp">
             <article>
               <div class="text-center">
                 <div class="icon icon-web-design"></div>
@@ -161,7 +161,7 @@
               <p class="description">Todas las empresas necesitan tener presencia en la era digital, URCORP te lleva ahí</p>
             </article>
           </div>
-          <div class="item item-4 col-md-3 col-sm-4 col-xs-6" data-name="legalario">
+          <div class="item item-4 col-md-3 col-sm-4 col-xs-12" data-name="legalario">
             <article>
               <div class="text-center">
                 <div class="icon icon-legal"></div>
@@ -172,7 +172,7 @@
               <p class="description">LEGALARIO te brinda apoyo con contratos, asesoría y servicios legales</p>
             </article>
           </div>
-          <div class="item item-5 col-md-3 col-sm-4 col-xs-6" data-name="contax">
+          <div class="item item-5 col-md-3 col-sm-4 col-xs-12" data-name="contax">
             <article>
               <div class="text-center">
                 <div class="icon icon-calc"></div>
@@ -183,7 +183,7 @@
               <p class="description">Nos encargamos del área contable, fiscal y financiera</p>
             </article>
           </div>
-          <div class="item item-6 col-md-3 col-sm-4 col-xs-6"  data-name="aem">
+          <div class="item item-6 col-md-3 col-sm-4 col-xs-12"  data-name="aem">
             <article>
               <div class="text-center">
                 <div class="icon icon-business"></div>
@@ -194,7 +194,7 @@
               <p class="description">Para que hagas más negocios con empresas de México y EUA</p>
             </article>
           </div>
-          <div class="item item-7 col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-2 col-xs-6" data-name="senor-pago">
+          <div class="item item-7 col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-2 col-xs-12" data-name="senor-pago">
             <article>
               <div class="text-center">
                 <div class="icon icon-card-terminal"></div>
@@ -205,7 +205,7 @@
               <p class="description">Acepta pagos con tarjeta sin tener que rentar una terminal de banco</p>
             </article>
           </div>
-          <div class="item item-8 col-md-3 col-sm-4 col-xs-6" data-name="rocketum">
+          <div class="item item-8 col-md-3 col-sm-4 col-xs-12" data-name="rocketum">
             <article>
               <div class="text-center">
                 <div class="icon icon-management-system"></div>
@@ -277,9 +277,9 @@
           </tbody>
         </table>
       </div>
-      <div class="terms-container col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 no-side-padding">
-        <p>* Contrata el KIT DIGITAL por $ 775 pesos mensuales con un pago inicial de $1,500 pesos.</p>
-        <p>** Contrata el KIT INTEGRAL por $ 775 pesos mensuales con un pago inicial de $2,500 pesos.</p>
+      <div class="terms-container col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-xs-12 no-side-padding">
+        <p>* Contrata el KIT DIGITAL por $775 pesos mensuales con un pago inicial de $1,500 pesos.</p>
+        <p>** Contrata el KIT INTEGRAL por $775 pesos mensuales con un pago inicial de $2,500 pesos.</p>
       </div>
     </div>
   </div>

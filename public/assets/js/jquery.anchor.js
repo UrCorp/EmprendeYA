@@ -10,7 +10,7 @@ jQuery.fn.anchorAnimate = function(settings) {
       var locationHref = window.location.href
       var elementClick = $(caller).attr("href")
       var destination = $(elementClick).offset().top;
-      var $header = $('#header');
+      var $header = $('#header .logo-container');
 
       if ($header.length == 1) {
         destination -= $header.height();

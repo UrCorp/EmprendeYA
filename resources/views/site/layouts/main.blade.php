@@ -42,10 +42,13 @@
           <a href="{!! route('site.index') !!}">
             <img src="{!! asset('public/assets/img/logo.svg') !!}" alt="EmprendeYA Logotipo" title="Logotipo de EmprendeYA" class="app-logo">
           </a>
+          <button id="btn-open-navbar" class="btn-menu btn btn-primary pull-right visible-xs" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="fa fa-bars"></span>
+          </button>
         </div>
-        <div class="col-md-7 col-sm-8 no-side-padding">
+        <div id="navbar" class="col-md-7 col-sm-8 no-side-padding collapse app-navbar">
           <nav>
-            <div class="col-md-12 no-side-padding app-navbar">
+            <div class="col-md-12 no-side-padding">
               <ul>
                 <li><a href="{!! (Route::is('site.index') ? '#kit' : URL::to('/#kit')) !!}" class="{!! (Route::is('site.index') ? 'anchorLink' : '') !!}">EL KIT</a></li>
                 <li><a href="{!! route('site.clients') !!}">NUESTROS CLIENTES</a></li>

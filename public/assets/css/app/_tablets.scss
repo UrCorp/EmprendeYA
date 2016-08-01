@@ -26,6 +26,7 @@ body {
 }
 
 .app-navbar {
+  display: block !important;
   text-align: center;
 }
 
@@ -37,6 +38,7 @@ body {
 }
 
 .app-navbar ul li {
+  width: auto;
   display: block;
   float: left;
 }

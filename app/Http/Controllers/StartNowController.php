@@ -21,14 +21,20 @@ class StartNowController extends Controller
 
   public function send(Request $request) {
     $startnow = $request->input('startnow');
-    
-    $startnow['kit'] = (string) $startnow['kit'];
-    $kit_id = (int) Kit::findBySlug($startnow['kit'])->id;
-    $startnow['kit_id'] = $kit_id;
+    $startnow['kit_id'] = 0;
+
+    if (array_key_exists('kit', $startnow) && !empty($startnow['kit'])) {
+      $startnow['kit'] = (string) $startnow['kit'];
+      $kit = Kit::findBySlug($startnow['kit']);
+
+      if (!is_null($kit)) {
+        $startnow['kit_id'] = (int) $kit->id;
+      }
+    } 
 
     $validator = Validator::make($startnow, [
       'name'      => 'required|max:60',
-      'phone'     => 'required|regex:/^[0-9]{10,15}$/',
+      'phone'     => 'required|regex:/^\+?\d{1,3}?[- .]?\(?(?:\d{2,3})\)?[- .]?\d\d\d[- .]?\d\d\d\d$/',
       'email'     => 'required|email|max:255',
       'company'   => 'max:60',
       'city'      => 'max:60',

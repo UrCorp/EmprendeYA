@@ -121,7 +121,7 @@ return [
 
     'phone' => [
       'required'      => 'Por favor, introduzca su número de teléfono o celular.',
-      'regex'         => 'El número telefónico debe contener únicamente dígitos y sin espacios.'
+      'regex'         => 'El número telefónico únicamente debe estar conformado por dígitos.'
     ],
 
     'company' => [
@@ -143,9 +143,9 @@ return [
 
     'kit_id' => [
       'required'      => 'Por favor, seleccione el kit que desea.',
-      'integer'       => 'El kit seleccionado es inváido.',
-      'min'           => 'El kit seleccionado es inváido.',
-      'exists'        => 'El kit seleccionado es inváido.',
+      'integer'       => 'El kit seleccionado es inválido.',
+      'min'           => 'El kit seleccionado es inválido.',
+      'exists'        => 'El kit seleccionado es inválido.',
     ],
   ],
 

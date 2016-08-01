@@ -27,9 +27,6 @@
         <p style="text-align: center;">Total: <b>${{ number_format($startnow['kit']->price, 2) }}</b></p>
       </div>
     </div>
-    <div style="width:100%;display:inline-block;text-align:center;">
-      <p style="font-size:18px;line-height:26px;display:inline-block;width:72%;">Por favor, redactanos un correo a <a href="mailto:comienzaya@emprendeya.org" style="color:#E6184B;">comienzaya@emprendeya.org</a> con los requerimientos de tu KIT o bien reenviando este mensaje incluyendo tu número de teléfono o celular para poder comunicarnos contigo.</p>
-    </div>
   </div>
   <div style="width:100%;display:inline-block;margin:auto;min-height:110px;background-color:#E6184B;border-top:16px solid #372751;">
   </div>

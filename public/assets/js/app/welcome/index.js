@@ -1,6 +1,22 @@
 $(function() {
-  var $items = $('.app-services .list .item');
-  var $generalModal = $('#generalModal');
+  var $mainCarousel = $('#main-carousel'),
+      $quotesCarousel = $('#quotes-carousel'),
+      $items = $('.app-services .list .item'),
+      $generalModal = $('#generalModal');
+
+  $mainCarousel.carousel({
+    interval: 8000,
+    wrap: true,
+    keyboard: true,
+    pause: null
+  });
+
+  $quotesCarousel.carousel({
+    interval: 10000,
+    wrap: true,
+    keyboard: true,
+    pause: null
+  })
 
   $generalModal.on('hidden.bs.modal', function (e) {
     $('.modal-body, .modal-footer', $generalModal).empty();
@@ -40,25 +56,59 @@ $(function() {
   });
 
   var startnow_validator = $('#startnow-form').validate({
+    rules: {
+      "startnow[name]": {
+        required: true,
+        maxlength: 60
+      },
+      "startnow[phone]": {
+        required: true,
+        regex: /^\+?\d{1,3}?[- .]?\(?(?:\d{2,3})\)?[- .]?\d\d\d[- .]?\d\d\d\d$/
+      },
+      "startnow[email]": {
+        required: true,
+        email: true,
+        maxlength: 255
+      },
+      "startnow[company]": {
+        maxlength: 60
+      },
+      "startnow[city]": {
+        maxlength: 60
+      },
+      "startnow[turn]": {
+        required: true,
+        maxlength: 60
+      },
+      "startnow[subject]": {
+        maxlength: 500
+      },
+      "startnow[kit]": {
+        required: true
+      }
+    },
     messages: {
       "startnow[name]": {
         required: "Por favor, introduzca su nombre."
       },
       "startnow[phone]": {
         required: "Por favor, introduzca su número de teléfono o celular.",
-        pattern: "El número telefonico unicamente debe contener dígitos."
+        regex: "El número telefónico únicamente debe estar conformado por dígitos."
       },
       "startnow[email]": {
         required: "Por favor, introduzca su correo electrónico.",
-        pattern: "El correo electrónico es inválido."
-      },
-      "startnow[email]": {
-        required: "Por favor, introduzca su correo electrónico.",
-        pattern: "El correo electrónico es inválido."
+        email: "Correo electrónico inválido.",
       },
       "startnow[turn]": {
         required: "Por favor, introduzca el giro de su empresa.",
       },
-    }
+      "startnow[kit]": {
+        required: "Seleccione alguno de los paquetes."
+      }
+    },
+    errorPlacement: function (error, element) {
+      var name = $(element).data("name");
+      error.appendTo($("#"+name+"_validate"));
+    },
   });
 });

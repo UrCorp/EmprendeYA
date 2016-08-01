@@ -37,7 +37,7 @@
   <div class="app-quotes col-xs-12 no-side-padding">
     <div class="header">
       <header>
-        <h2 class="title"><img src="{!! asset('public/assets/img/icon-quotation-marks-1.svg') !!}" alt="Comillas 1" title="Quotes" class="icon">TESTIMONIALES</h2>
+        <h2 class="title"><img src="{!! asset('public/assets/img/icon-quotation-marks-1.svg') !!}" alt="Comillas 1" title="Quotes" class="icon">TESTIMONIOS</h2>
       </header>
     </div>
     <div id="quotes-carousel" class="carousel slide" data-ride="carousel">

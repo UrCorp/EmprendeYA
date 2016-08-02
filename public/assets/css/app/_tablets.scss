@@ -453,4 +453,160 @@ body {
   height: 32px;
 }
 
+/* [FAQ PAGE]
+   ========================================================================= */
+
+.app-faq-1 {
+  padding: 75px 0;
+}
+
+.app-faq-1 .header {
+  margin-bottom: 60px;
+}
+
+.app-faq-1 .header .title {
+  font-size: 72px;
+  line-height: 84px;
+  color: #5E5E5E;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.app-faq-1 .header .explanation a {
+  color: #da214d;
+}
+
+.app-faq-1 .header .explanation {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.app-faq-1 .faq-nav li {
+  text-align: center;
+}
+
+.app-faq-1 .faq-nav li a {
+  color: #c02a4e;
+  border-radius: 0;
+}
+
+.app-faq-1 .faq-nav li a:hover {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  background-color: #da214d;
+  color: #FFFFFF;
+}
+
+.app-faq-1 .faq-nav li.active > a {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+  background-color: inherit;
+  color: #c02a4e;
+  border: 1px solid #c02a4e;
+}
+
+.app-faq-1 .tab-content .tab-pane article .title {
+  font-weight: 700;
+  margin: 5px 5px 30px 5px;
+}
+
+.app-faq-1 .tab-content .tab-pane article h3 { 
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.app-faq-1 .tab-content .tab-pane article p {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.app-faq-1 .tab-content .tab-pane article ul {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.app-faq-1 .tab-content .tab-pane article ul li {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.app-clients {
+  padding: 30px 15px 45px 15px;
+}
+
+.app-clients .header .title {
+  font-size: 48px;
+  line-height: 52px;
+  color: #5E5E5E;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.app-clients .clients-container .client .header .title {
+  font-size: 26px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000000;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.app-clients .clients-container .client img.thumbnail {
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 10px;
+}
+
+.app-clients .clients-container .client p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.app-clients .clients-container .client .more-info {
+  margin-top: 10px;
+  cursor: pointer;
+  color: #000000;
+  padding: 4px 8px;
+  border-bottom: 1px solid #000000;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.app-clients .clients-container .client .more-info:hover {
+  color: #333333;
+  border-bottom: 1px solid #555555;
+}
+
+.app-clients .aside .title {
+  padding: 4px 2px;
+  font-size: 24px;
+  line-height: 28px;
+  border-bottom: 1px solid #FF00FF;
+}
+
+.app-clients .aside ul {
+  margin-top: 15px;
+  padding: 0;
+  list-style: none;
+}
+
+.app-clients .aside ul li {
+  margin-bottom: 10px;
+}
+
+.app-clients .aside ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  line-height: 22px;
+}
+
 }

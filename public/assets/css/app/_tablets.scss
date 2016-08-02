@@ -457,7 +457,7 @@ body {
    ========================================================================= */
 
 .app-faq-1 {
-  padding: 75px 0;
+  padding: 25px 0;
 }
 
 .app-faq-1 .header {
@@ -479,6 +479,11 @@ body {
 .app-faq-1 .header .explanation {
   font-size: 16px;
   line-height: 22px;
+}
+
+.app-faq-1 .faq-nav {
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .app-faq-1 .faq-nav li {
@@ -517,12 +522,12 @@ body {
 }
 
 .app-faq-1 .tab-content .tab-pane article h3 { 
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
 }
 
 .app-faq-1 .tab-content .tab-pane article p {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 22px;
 }
 
@@ -532,7 +537,7 @@ body {
 }
 
 .app-faq-1 .tab-content .tab-pane article ul li {
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 15px;
 }
 

@@ -671,19 +671,19 @@ body {
    ========================================================================= */
 
 .app-faq-1 {
-  padding: 75px 0;
+  padding: 20px 0;
 }
 
 .app-faq-1 .header {
-  margin-bottom: 60px;
+  margin-bottom: 15px;
 }
 
 .app-faq-1 .header .title {
-  font-size: 72px;
-  line-height: 84px;
+  font-size: 32px;
+  line-height: 48px;
   color: #5E5E5E;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .app-faq-1 .header .explanation a {
@@ -691,8 +691,13 @@ body {
 }
 
 .app-faq-1 .header .explanation {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 22px;
+}
+
+.app-faq-1 .faq-nav {
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .app-faq-1 .faq-nav li {
@@ -731,12 +736,12 @@ body {
 }
 
 .app-faq-1 .tab-content .tab-pane article h3 { 
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
 }
 
 .app-faq-1 .tab-content .tab-pane article p {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 22px;
 }
 
@@ -746,7 +751,7 @@ body {
 }
 
 .app-faq-1 .tab-content .tab-pane article ul li {
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 15px;
 }
 

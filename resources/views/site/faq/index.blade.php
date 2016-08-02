@@ -1,8 +1,8 @@
 @extends('site.layouts.main')
 @section('content')
 <section>
-  <div class="app-faq-1 col-md-12">
-    <div class="col-md-10 col-md-offset-1">
+  <div class="app-faq-1 col-xs-12">
+    <div class="col-lg-10 col-lg-offset-1 col-xs-12">
       <header>
         <div class="header">
           <h1 class="title">FAQ</h1>
@@ -10,7 +10,7 @@
         </div>
       </header>
       <div class="col-md-12 no-side-padding">
-        <div class="col-md-3 no-side-padding">
+        <div class="col-sm-3 col-xs-12 no-side-padding">
           <nav>
             <ul class="nav nav-pills nav-stacked faq-nav">
               <li role="presentation" class="active"><a href="#phone" aria-controls="phone" role="tab" data-toggle="tab">TELÉFONO</a></li>
@@ -26,7 +26,7 @@
             </ul>
           </nav>
         </div>
-        <div class="col-md-9">
+        <div class="col-sm-9 col-xs-12">
           <div class="tab-content">
             <div role="tabpanel" class="tab-pane active" id="phone">
               <article>

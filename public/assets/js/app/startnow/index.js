@@ -9,7 +9,7 @@ $(function() {
       },
       "startnow[phone]": {
         required: true,
-        regex: /^\+?\d{1,3}?[- .]?\(?(?:\d{2,3})\)?[- .]?\d\d\d[- .]?\d\d\d\d$/
+        regex: /^[0-9]{10,10}$/
       },
       "startnow[email]": {
         required: true,
@@ -39,7 +39,7 @@ $(function() {
       },
       "startnow[phone]": {
         required: "Por favor, introduzca su número de teléfono o celular.",
-        regex: "El número telefónico únicamente debe estar conformado por dígitos."
+        regex: "El número telefónico debe estar conformado únicamente por 10 dígitos."
       },
       "startnow[email]": {
         required: "Por favor, introduzca su correo electrónico.",

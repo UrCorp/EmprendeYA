@@ -68,7 +68,7 @@
             <a href="#">ACERCA DE</a>
           </div>
           <div class="col-sm-4 col-xs-12 no-side-padding text-center">
-            <a href="#">AVISO DE PRIVACIDAD</a>
+            <a id="privacyNotice" href="#">AVISO DE PRIVACIDAD</a>
           </div>
           <div class="col-sm-4 col-xs-12 no-side-padding text-center">
             <a href="#">POLITICA DE COOKIES</a>

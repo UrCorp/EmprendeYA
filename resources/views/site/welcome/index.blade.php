@@ -183,7 +183,7 @@
               <p class="description">Nos encargamos del área contable, fiscal y financiera</p>
             </article>
           </div>
-          <div class="item item-6 col-md-3 col-sm-4 col-xs-12"  data-name="aem">
+          <div class="item item-6 col-md-3 col-sm-4 col-xs-12"  data-name="plataforma-emprendeya">
             <article>
               <div class="text-center">
                 <div class="icon icon-business"></div>

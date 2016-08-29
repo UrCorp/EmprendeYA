@@ -34,7 +34,7 @@ class StartNowController extends Controller
 
     $validator = Validator::make($startnow, [
       'name'      => 'required|max:60',
-      'phone'     => 'required|regex:/^\+?\d{1,3}?[- .]?\(?(?:\d{2,3})\)?[- .]?\d\d\d[- .]?\d\d\d\d$/',
+      'phone'     => 'required|regex:/^[0-9]{10,10}$/',
       'email'     => 'required|email|max:255',
       'company'   => 'max:60',
       'city'      => 'max:60',

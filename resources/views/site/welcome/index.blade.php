@@ -172,7 +172,7 @@
               <p class="description">LEGALARIO te brinda apoyo con contratos, asesoría y servicios legales</p>
             </article>
           </div>
-          <div class="item item-5 col-md-3 col-sm-4 col-xs-12" data-name="contax">
+          <div class="item item-5 col-md-3 col-md-offset-2 col-sm-4 col-xs-12" data-name="contax">
             <article>
               <div class="text-center">
                 <div class="icon icon-calc"></div>
@@ -181,17 +181,6 @@
                 <h3 class="title">MANEJO DE<br/>CONTABILIDAD</h3>
               </header>
               <p class="description">Nos encargamos del área contable, fiscal y financiera</p>
-            </article>
-          </div>
-          <div class="item item-6 col-md-3 col-sm-4 col-xs-12"  data-name="plataforma-emprendeya">
-            <article>
-              <div class="text-center">
-                <div class="icon icon-business"></div>
-              </div>
-              <header>
-                <h3 class="title">PLATAFORMA DE<br/> NEGOCIOS</h3>
-              </header>
-              <p class="description">Para que hagas más negocios con empresas de México y EUA</p>
             </article>
           </div>
           <div class="item item-7 col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-2 col-xs-12" data-name="senor-pago">

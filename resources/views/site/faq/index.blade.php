@@ -17,10 +17,6 @@
               <li role="presentation"><a href="#financing" aria-controls="financing" role="tab" data-toggle="tab">FINANCIAMIENTO</a></li>
               <li role="presentation"><a href="#design" aria-controls="design" role="tab" data-toggle="tab">DISEÑO</a></li>
               <li role="presentation"><a href="#legal" aria-controls="legal" role="tab" data-toggle="tab">CONTRATOS Y ASESORÍA LEGAL</a></li>
-              <!--[Tags: Accounting, Contax, Contabilidad]
-              <li role="presentation"><a href="#accounting" aria-controls="accounting" role="tab" data-toggle="tab">CONTABILIDAD</a></li>
-              -->
-              <li role="presentation"><a href="#business-platform" aria-controls="business-platform" role="tab" data-toggle="tab">PLATAFORMA DE NEGOCIOS</a></li>
               <li role="presentation"><a href="#card-terminal" aria-controls="card-terminal" role="tab" data-toggle="tab">TERMINAL MÓVIL</a></li>
               <li role="presentation"><a href="#management" aria-controls="management" role="tab" data-toggle="tab">ADMINISTRACIÓN</a></li>
             </ul>
@@ -126,13 +122,6 @@
                 <h3>¿Qué vigencia tiene el Aviso de Privacidad?</h3>
                 <p>Es indefinida, mientras no cambies tu razón social, los datos que recabas de tus clientes y el trato que les das o las acciones que ellos pueden tomar para ejercer su derecho a la privacidad.</p>
               </article>
-            </div>
-            <!--[Tags: Accounting, Contax, Contabilidad]
-            <div role="tabpanel" class="tab-pane" id="accounting">.5.</div>-->
-            <div role="tabpanel" class="tab-pane" id="business-platform">
-              <div class="embed-responsive embed-responsive-16by9">
-                <embed  class="embed-responsive-item" src="{!! URL::to('public/files/admin/documents/faqs/aem.pdf') !!}" width="100%" height="500" alt="pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
-              </div>
             </div>
             <div role="tabpanel" class="tab-pane" id="card-terminal">
               <article>
